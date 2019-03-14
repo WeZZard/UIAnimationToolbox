@@ -50,7 +50,7 @@ The frameworks hooked up into the whole process of the installations of
 UIKit block animations and spring animations, thus it can shifting
 animations timing on-the-fly.
 
-<img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/animations-timing-example.gif" alt="Animations Timing" style="width: 375px">
+<img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/animations-timing-example.gif" alt="Animations Timing" width="375px">
 
 See detailed usages of `CAMediaTiming` on
 [Controllign Animation Timing](http://ronnqvi.st/controlling-animation-timing)
@@ -164,7 +164,7 @@ UIView.animate(withDuration: 2.0) {
 }
 ```
 
-<img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/interpolate-block-animations-example.gif" alt="Interpolate Block Animations" style="width: 375px">
+<img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/interpolate-block-animations-example.gif" alt="Interpolate Block Animations" width="375px">
 
 ```swift
 UIView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2, options: []) {
@@ -175,7 +175,7 @@ UIView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 0.5, initial
 }
 ```
 
-<img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/interpolate-spring-animations-example.gif" alt="Interpolate Spring Animations" style="width: 375px">
+<img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/interpolate-spring-animations-example.gif" alt="Interpolate Spring Animations" width="375px">
 
 Of course, you can also nest an animation interpolator in a timing
 shifting closure. The following animation interpolator gets started to
