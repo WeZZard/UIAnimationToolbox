@@ -1,5 +1,5 @@
 //
-//  CABasicAnimationAction.swift
+//  AdditiveAnimationAction.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 15/01/2017.
@@ -14,7 +14,7 @@ import QuartzCore
 ///
 /// This class may enabled the animation's `isAdditive` property when possible.
 ///
-open class CABasicAnimationAction<Animation: CABasicAnimation>:
+open class AdditiveAnimationAction<Animation: CABasicAnimation>:
     NSObject, CAAction
 {
     open unowned var layer: CALayer
@@ -23,7 +23,7 @@ open class CABasicAnimationAction<Animation: CABasicAnimation>:
     
     open var pendingAnimation: Animation
     
-    open var enablesAdditiveness: Bool
+    open var isAdditivenessRewriteEnabled: Bool
     
     open private(set) var hasRewrittenAdditiveness: Bool = false
     
@@ -31,7 +31,7 @@ open class CABasicAnimationAction<Animation: CABasicAnimation>:
         layer: CALayer,
         event: String,
         pendingAnimation: Animation,
-        enablesAdditiveness: Bool = true
+        isAdditivenessRewriteEnabled: Bool = true
         )
     {
         assert(pendingAnimation.fromValue != nil, "Expects animation's fromValue not to be nil.")
@@ -39,7 +39,7 @@ open class CABasicAnimationAction<Animation: CABasicAnimation>:
         self.layer = layer
         self.event = event
         self.pendingAnimation = pendingAnimation
-        self.enablesAdditiveness = enablesAdditiveness
+        self.isAdditivenessRewriteEnabled = isAdditivenessRewriteEnabled
     }
     
     open func run(
@@ -52,18 +52,37 @@ open class CABasicAnimationAction<Animation: CABasicAnimation>:
         pendingAnimation.toValue = layer.value(forKey: event)
         
         // Rewrite `isAdditive`
-        if enablesAdditiveness {
+        if isAdditivenessRewriteEnabled {
             assert((anObject as AnyObject) === layer)
             _rewriteAdditiveness()
         }
         
-        pendingAnimation.run(forKey: event, object: anObject, arguments: dict)
+        if let aLayer = anObject as? CALayer {
+            // Detect event collision when `anObject` is of type of `CALayer`.
+            var noCollisionKey = event
+            
+            var probingTimes = 0
+            
+            while aLayer.animation(forKey: noCollisionKey) != nil {
+                switch probingTimes {
+                case 0:     noCollisionKey = event
+                default:    noCollisionKey = "\(event)_\(probingTimes)"
+                }
+                probingTimes = probingTimes + 1
+            }
+            
+            pendingAnimation.run(forKey: noCollisionKey, object: aLayer, arguments: dict)
+        } else {
+            pendingAnimation.run(forKey: event, object: anObject, arguments: dict)
+        }
     }
     
     private func _rewriteAdditiveness() {
         precondition(pendingAnimation.fromValue != nil && !(pendingAnimation.fromValue is NSNull))
         
-        let additivePolicy = type(of: layer).additivePolicy(forKey: event)
+        let presentationLayer = layer.presentation() ?? layer
+        
+        let additivePolicy = type(of: presentationLayer).additivePolicy(forKey: event)
         
         switch additivePolicy {
         case .cgRect:

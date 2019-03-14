@@ -1,5 +1,5 @@
 //
-//  UICustomAnimationPreprocessAction.swift
+//  _UIAnimationAction.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 1/29/16.
@@ -13,8 +13,8 @@ internal protocol _UIAnimationAction: CAAction {
     associatedtype Animation: CAAnimation
 }
 
-//MARK: - _UIBasicAnimationAction
-internal class _UIBasicAnimationAction<A: CABasicAnimation>:
+//MARK: - _UIAdditiveAnimationAction
+internal class _UIAdditiveAnimationAction<A: CABasicAnimation>:
     _UIAnimationAction
 {
     internal typealias Animation = A
@@ -23,10 +23,10 @@ internal class _UIBasicAnimationAction<A: CABasicAnimation>:
         return action.pendingAnimation
     }
     
-    internal let action: CABasicAnimationAction<A>
+    internal let action: AdditiveAnimationAction<A>
     
     internal init(layer: CALayer, event: String, pendingAnimation: Animation) {
-        action = CABasicAnimationAction(
+        action = AdditiveAnimationAction(
             layer: layer, event: event, pendingAnimation: pendingAnimation
         )
     }

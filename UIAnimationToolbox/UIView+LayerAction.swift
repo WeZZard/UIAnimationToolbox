@@ -25,7 +25,6 @@ private let _actionForLayerForKey: _CALayerDelegateActionForLayerForKey = {
     (aSelf, aSelector, layer, event) -> CAAction? in
     
     if let context = UIView._currentAnimationContext {
-        // Add support to UIView+Mask
         if let originalAction = _originalActionForLayerForKey(
             aSelf,
             aSelector,

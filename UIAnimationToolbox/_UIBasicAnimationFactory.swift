@@ -55,7 +55,7 @@ internal class _UIBasicAnimationFactory<
                 }
                 
                 // Returns the action
-                return _UIBasicAnimationAction(
+                return _UIAdditiveAnimationAction(
                     layer: layer,
                     event: event,
                     pendingAnimation: pendingAnimation

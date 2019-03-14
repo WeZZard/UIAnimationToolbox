@@ -16,8 +16,7 @@ class UIAnimationTimingTests: XCTestCase {
         
         UIView.animate(withDuration: 0.3, animations: {
             parent.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
-            UIView.shiftAnimationsTiming({ (timing) in
-                timing.timeOffset = 0.3
+            UIView.shiftAnimationsTiming(timeOffset: 0.3, animations: {
                 child.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
             })
         })
@@ -42,8 +41,7 @@ class UIAnimationTimingTests: XCTestCase {
         
         UIView.animate(withDuration: 0.3, animations: {
             parent.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
-            UIView.shiftAnimationsTiming({ (timing) in
-                timing.timeOffset = 0.3
+            UIView.shiftAnimationsTiming(timeOffset: 0.3, animations: {
                 child.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
             })
         }, completion: nil)
@@ -68,8 +66,7 @@ class UIAnimationTimingTests: XCTestCase {
         
         UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
             parent.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
-            UIView.shiftAnimationsTiming({ (timing) in
-                timing.timeOffset = 0.3
+            UIView.shiftAnimationsTiming(timeOffset: 0.3, animations: {
                 child.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
             })
         })
@@ -94,8 +91,7 @@ class UIAnimationTimingTests: XCTestCase {
         
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
             parent.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
-            UIView.shiftAnimationsTiming({ (timing) in
-                timing.timeOffset = 0.3
+            UIView.shiftAnimationsTiming(timeOffset: 0.3, animations: {
                 child.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
             })
         }, completion: nil)

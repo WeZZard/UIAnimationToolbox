@@ -15,22 +15,7 @@ extension CALayer {
     }
     
     public static func objectiveCEncoding(forKey key: String) -> String? {
-        let nsKey = key as NSString
-        let keyLength = nsKey.length
-        let keyBuffer: UnsafeMutablePointer<Int8> =
-            .allocate(capacity: nsKey.length)
-        
-        nsKey.getCString(
-            keyBuffer,
-            maxLength: keyLength,
-            encoding: String.Encoding.utf8.rawValue
-        )
-        
-        defer {
-            keyBuffer.deallocate()
-        }
-        
-        guard let property = class_getProperty(self, keyBuffer) else {
+        guard let property = class_getProperty(self, key) else {
             return nil
         }
         
