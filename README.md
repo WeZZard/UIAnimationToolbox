@@ -50,6 +50,15 @@ The framework hooked up into the whole process of the installations of
 UIKit block animations and spring animations, thus it can shifting
 animations timing on-the-fly.
 
+```swift
+UIView.animate(withDuration: 0.3) {
+    /* Animations without timing shifting */
+    UIView.shiftAnimationsTiming(speed: 0.5) {
+        /* Timing shifted animations */
+    }
+}
+```
+
 <img src="https://github.com/WeZZard/UIAnimationToolbox/raw/master/.readme.d/animations-timing-example.gif" alt="Animations Timing" width="375px">
 
 See detailed usages of `CAMediaTiming` on
