@@ -5,7 +5,7 @@
 
 [中文](./使用說明.md)
 
-Make use of advanced Core Animation feture without leaving UIKit.
+Make use of advanced Core Animation feture without leaving UIKit.
 
 ## Highlights
 
