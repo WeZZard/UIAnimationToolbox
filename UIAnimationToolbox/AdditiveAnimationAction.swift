@@ -78,6 +78,8 @@ open class AdditiveAnimationAction<Animation: CABasicAnimation>:
     }
     
     private func _rewriteAdditiveness() {
+        guard !hasRewrittenAdditiveness else { return }
+        
         precondition(pendingAnimation.fromValue != nil && !(pendingAnimation.fromValue is NSNull))
         
         let presentationLayer = layer.presentation() ?? layer
