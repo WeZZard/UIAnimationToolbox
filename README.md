@@ -37,7 +37,7 @@ Make use of advanced Core Animation feture without leaving UIKit.
 
 - Evaluate `CAMediaTimingFunction`'s `y` value with Newton-Raphson method.
 
-- Enables Additive Animation in Core Animation Level with Less Effort.
+- Enables additive animation in Core Animation level with less effort.
 
 ## Usages
 
