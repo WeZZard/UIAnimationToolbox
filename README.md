@@ -50,7 +50,7 @@ The frameworks hooked up into the whole process of the installations of
 UIKit block animations and spring animations, thus it can shifting
 animations timing on-the-fly.
 
-![Animations Timing](.readme.d/animations-timing-example.gif)
+![Animations Timing](.readme.d/animations-timing-example.gif | width=375)
 
 See detailed usages of `CAMediaTiming` on
 [Controllign Animation Timing](http://ronnqvi.st/controlling-animation-timing)
@@ -164,7 +164,7 @@ UIView.animate(withDuration: 2.0) {
 }
 ```
 
-![Interpolate Block Animations](.readme.d/interpolate-block-animations-example.gif)
+![Interpolate Block Animations](.readme.d/interpolate-block-animations-example.gif | width=375)
 
 ```swift
 UIView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2, options: []) {
@@ -175,7 +175,7 @@ UIView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 0.5, initial
 }
 ```
 
-![Interpolate Spring Animations](.readme.d/interpolate-spring-animations-example.gif)
+![Interpolate Spring Animations](.readme.d/interpolate-spring-animations-example.gif | width=375)
 
 Of course, you can also nest an animation interpolator in a timing
 shifting closure. The following animation interpolator gets started to
