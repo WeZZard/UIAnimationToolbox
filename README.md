@@ -14,7 +14,7 @@ Make use of advanced Core Animation feture without leaving UIKit.
   ```swift
   UIView.animate(withDuration: 0.3) {
       /* Animations without timing shifting */
-      UIView.shiftAnimationTiming(speed: 0.5) {
+      UIView.shiftAnimationsTiming(speed: 0.5) {
           /* Timing shifted animations */
       }
   }
@@ -46,7 +46,7 @@ category app in this project.
 
 ### Shift Animation's Timing
 
-The frameworks hooked up into the whole process of the installations of
+The framework hooked up into the whole process of the installations of
 UIKit block animations and spring animations, thus it can shifting
 animations timing on-the-fly.
 
@@ -151,7 +151,7 @@ animations by default.
 
 ### Interpolate UIKit Animations
 
-The frameworks also can interpolate UIKit block animations and spring
+The framework also can interpolate UIKit block animations and spring
 animations. You can use this API to synchronize UIKit block animations and
 spring animations with your custom animated stuffs (such as voice volumne).
 
@@ -198,8 +198,8 @@ UIView.animate(withDuration: 2.0) {
 
 `CAMediaTimingFunction` is a black-box to much developers, but the theory
 behind this class is quite simple - bezier path. We can evaluate
-`CAMediaTimingFunction`'s y value by using Newton-Raphson method which
-would be taught on math courses of most colleges. I encapsulated the whole
+`CAMediaTimingFunction`'s y value by using Newton-Raphson method which may
+be taught on math courses of most colleges. I encapsulated the whole
 process within the function `CAMediaTimingFunction.evaluteY(forX:)`.
 
 Evaluating `CAMediaTimingFunction`'s y value enables you to easily gain a
