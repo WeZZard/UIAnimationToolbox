@@ -27,17 +27,19 @@ internal class _UIAnimationFactory<
         return Animation.self
     }
     
-    /// Prepare the animation template. Call after the context was initialized
-    /// and pushed the the global context stack.
+    /// Prepare the animation template. Call after the context was
+    /// initialized and pushed to the the global context stack.
     ///
     /// - Notes: This is a dirty hack. UIKit initiates view-controller
-    /// transition alongside animations when the original animation
-    /// implementation was fired. But since we have to use an independent
-    /// animation block to grab an animation template, the view-controller
-    /// transition alongside animations would happen during generating the
-    /// animation template. Thus we cannot generate the animation template in
-    /// the initializer, else the view-controller transition alongside
-    /// animations would not be able to grab the animation configure context.
+    /// transition alongside animations when the original implementation
+    /// of UIKit animation API was fired. But since we have to use an
+    /// independent animation block to grab an animation template, the
+    /// view-controller transition alongside animations would happen
+    /// during generating the animation template. Thus we cannot generate
+    /// the animation template in the initializer, else the
+    /// view-controller transition alongside animations would not be able
+    /// to grab the animation configure context.
+    ///
     internal func prepare() {
         _ = animationTemplate
     }
