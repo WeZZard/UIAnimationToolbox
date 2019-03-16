@@ -14,11 +14,13 @@ internal protocol _UIAnimationContextInternal: UIAnimationContext {
     
     func presetAction(for layer: CALayer, forKey event: String) -> CAAction?
     
-    var animationTimings: [_UIAnimationTiming] { get set }
+    func action(for layer: CALayer, forKey event: String, style: UIAnimationActionStyle) -> CAAction?
+    
+    var animationTimings: [UIAnimationTiming] { get set }
 }
 
 extension _UIAnimationContextInternal {
-    internal var currentAnimationTiming: _UIAnimationTiming? {
+    internal var currentAnimationTiming: UIAnimationTiming? {
         return animationTimings.last
     }
 }

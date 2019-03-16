@@ -1,5 +1,5 @@
 //
-//  AdditiveAnimationAction.swift
+//  CAAdditiveAnimationAction.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 15/01/2017.
@@ -14,7 +14,7 @@ import QuartzCore
 ///
 /// This class may enabled the animation's `isAdditive` property when possible.
 ///
-open class AdditiveAnimationAction<Animation: CABasicAnimation>:
+open class CAAdditiveAnimationAction<Animation: CABasicAnimation>:
     NSObject, CAAction
 {
     open unowned var layer: CALayer
@@ -158,3 +158,6 @@ open class AdditiveAnimationAction<Animation: CABasicAnimation>:
         hasRewrittenAdditiveness = true
     }
 }
+
+@available(*, renamed: "CAAdditiveAnimationAction")
+public typealias AdditiveAnimationAction = CAAdditiveAnimationAction

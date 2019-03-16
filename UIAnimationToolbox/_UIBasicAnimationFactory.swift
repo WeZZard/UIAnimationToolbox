@@ -10,7 +10,7 @@ import UIKit
 
 internal class _UIBasicAnimationFactory<
     A: CABasicAnimation, P: _CABasicAnimationInterconvertible
-    >: _UIViewAnimationFactory<A, P> where
+    >: _UIAnimationFactory<A, P> where
     P.Animation == A
 {
     internal let options: UIView.AnimationOptions
@@ -22,7 +22,7 @@ internal class _UIBasicAnimationFactory<
         if let viewLayerAction = presetAction(for: layer, forKey: event),
             !(viewLayerAction is NSNull)
         {
-            currentAnimationTiming?.shift(viewLayerAction)
+            currentAnimationTiming?._shiftAction(viewLayerAction)
             
             return viewLayerAction
         } else {
@@ -36,7 +36,7 @@ internal class _UIBasicAnimationFactory<
                 
                 pendingAnimation.fromValue = value
                 
-                currentAnimationTiming?.shift(pendingAnimation)
+                currentAnimationTiming?._shiftAction(pendingAnimation)
                 
                 // Layout Subviews
                 if options.contains(.layoutSubviews) {
@@ -71,15 +71,15 @@ internal class _UIBasicAnimationFactory<
         ) -> CAAction?
     {
         // Set the layer's delegate temporarily to `animationTemplate`
-        CATransaction.setDisableActions(true)
+        CATransaction.disablesActions = true
         let originalLayerDelegate = layer.delegate
         layer.delegate = animationTemplate
-        CATransaction.setDisableActions(false)
+        CATransaction.disablesActions = false
         
         defer {
-            CATransaction.setDisableActions(true)
+            CATransaction.disablesActions = true
             layer.delegate = originalLayerDelegate
-            CATransaction.setDisableActions(false)
+            CATransaction.disablesActions = false
         }
         
         if let action = _originalCALayerDelegateActionForLayerForKey(
@@ -89,7 +89,7 @@ internal class _UIBasicAnimationFactory<
             event
             )
         {
-            currentAnimationTiming?.shift(action)
+            currentAnimationTiming?._shiftAction(action)
             
             return action
         }

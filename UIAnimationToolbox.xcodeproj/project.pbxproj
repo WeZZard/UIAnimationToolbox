@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C181291223CEACC00A6E1E4 /* UIAnimationActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C181290223CEACC00A6E1E4 /* UIAnimationActionTests.swift */; };
+		9C181292223CEACC00A6E1E4 /* UIAnimationActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C181290223CEACC00A6E1E4 /* UIAnimationActionTests.swift */; };
 		9C1B1A9D223924C800074BA0 /* UIAnimationToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1B1A94223924C800074BA0 /* UIAnimationToolbox.framework */; };
 		9C1B1AB9223924DB00074BA0 /* UIAnimationToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1B1AB0223924DA00074BA0 /* UIAnimationToolbox.framework */; };
 		9C1B1AD42239254E00074BA0 /* CAMediaTiming+ToolboxAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AC82239254E00074BA0 /* CAMediaTiming+ToolboxAddition.swift */; };
@@ -21,8 +23,8 @@
 		9C1B1AE12239254E00074BA0 /* CATransaction+ToolboxAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1ACC2239254E00074BA0 /* CATransaction+ToolboxAddition.swift */; };
 		9C1B1AE92239254E00074BA0 /* CALayer+ToolboxAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1ACF2239254E00074BA0 /* CALayer+ToolboxAddition.swift */; };
 		9C1B1AEA2239254E00074BA0 /* CALayer+ToolboxAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1ACF2239254E00074BA0 /* CALayer+ToolboxAddition.swift */; };
-		9C1B1AEC2239254E00074BA0 /* AdditiveAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AD02239254E00074BA0 /* AdditiveAnimationAction.swift */; };
-		9C1B1AED2239254E00074BA0 /* AdditiveAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AD02239254E00074BA0 /* AdditiveAnimationAction.swift */; };
+		9C1B1AEC2239254E00074BA0 /* CAAdditiveAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AD02239254E00074BA0 /* CAAdditiveAnimationAction.swift */; };
+		9C1B1AED2239254E00074BA0 /* CAAdditiveAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AD02239254E00074BA0 /* CAAdditiveAnimationAction.swift */; };
 		9C1B1AFF22392A5900074BA0 /* _UIAnimationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF122392A5800074BA0 /* _UIAnimationTemplate.swift */; };
 		9C1B1B0022392A5900074BA0 /* _UIAnimationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF122392A5800074BA0 /* _UIAnimationTemplate.swift */; };
 		9C1B1B0222392A5900074BA0 /* _UISpringAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF222392A5800074BA0 /* _UISpringAnimationFactory.swift */; };
@@ -31,12 +33,12 @@
 		9C1B1B0622392A5900074BA0 /* UIView+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF322392A5800074BA0 /* UIView+Animate.swift */; };
 		9C1B1B0822392A5900074BA0 /* UIView+LayerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF422392A5800074BA0 /* UIView+LayerAction.swift */; };
 		9C1B1B0922392A5900074BA0 /* UIView+LayerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF422392A5800074BA0 /* UIView+LayerAction.swift */; };
-		9C1B1B0B22392A5900074BA0 /* UIAnimationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF522392A5800074BA0 /* UIAnimationActions.swift */; };
-		9C1B1B0C22392A5900074BA0 /* UIAnimationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF522392A5800074BA0 /* UIAnimationActions.swift */; };
+		9C1B1B0B22392A5900074BA0 /* UIAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF522392A5800074BA0 /* UIAnimationAction.swift */; };
+		9C1B1B0C22392A5900074BA0 /* UIAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF522392A5800074BA0 /* UIAnimationAction.swift */; };
 		9C1B1B0E22392A5900074BA0 /* _UIAnimationContextInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF622392A5800074BA0 /* _UIAnimationContextInternal.swift */; };
 		9C1B1B0F22392A5900074BA0 /* _UIAnimationContextInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF622392A5800074BA0 /* _UIAnimationContextInternal.swift */; };
-		9C1B1B1122392A5900074BA0 /* _UIViewAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF722392A5800074BA0 /* _UIViewAnimationFactory.swift */; };
-		9C1B1B1222392A5900074BA0 /* _UIViewAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF722392A5800074BA0 /* _UIViewAnimationFactory.swift */; };
+		9C1B1B1122392A5900074BA0 /* _UIAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF722392A5800074BA0 /* _UIAnimationFactory.swift */; };
+		9C1B1B1222392A5900074BA0 /* _UIAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF722392A5800074BA0 /* _UIAnimationFactory.swift */; };
 		9C1B1B1422392A5900074BA0 /* _UIBasicAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF822392A5800074BA0 /* _UIBasicAnimationFactory.swift */; };
 		9C1B1B1522392A5900074BA0 /* _UIBasicAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF822392A5800074BA0 /* _UIBasicAnimationFactory.swift */; };
 		9C1B1B1722392A5900074BA0 /* _UIBlockAnimationFactory5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AF922392A5800074BA0 /* _UIBlockAnimationFactory5.swift */; };
@@ -45,8 +47,8 @@
 		9C1B1B1B22392A5900074BA0 /* UIView+AnimationInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFA22392A5800074BA0 /* UIView+AnimationInterpolator.swift */; };
 		9C1B1B1D22392A5900074BA0 /* UIAnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFB22392A5900074BA0 /* UIAnimationContext.swift */; };
 		9C1B1B1E22392A5900074BA0 /* UIAnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFB22392A5900074BA0 /* UIAnimationContext.swift */; };
-		9C1B1B2022392A5900074BA0 /* _UIAnimationTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFC22392A5900074BA0 /* _UIAnimationTiming.swift */; };
-		9C1B1B2122392A5900074BA0 /* _UIAnimationTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFC22392A5900074BA0 /* _UIAnimationTiming.swift */; };
+		9C1B1B2022392A5900074BA0 /* UIAnimationTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFC22392A5900074BA0 /* UIAnimationTiming.swift */; };
+		9C1B1B2122392A5900074BA0 /* UIAnimationTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFC22392A5900074BA0 /* UIAnimationTiming.swift */; };
 		9C1B1B2322392A5900074BA0 /* _UIAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFD22392A5900074BA0 /* _UIAnimationAction.swift */; };
 		9C1B1B2422392A5900074BA0 /* _UIAnimationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AFD22392A5900074BA0 /* _UIAnimationAction.swift */; };
 		9C1B1B2722392AA100074BA0 /* UIViewAnimationOptions+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2522392AA000074BA0 /* UIViewAnimationOptions+Curve.swift */; };
@@ -55,10 +57,8 @@
 		9C1B1B2B22392E2A00074BA0 /* ___UIAnimationToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */; };
 		9C1B1B2D2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */; };
 		9C1B1B2E2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */; };
-		9C1B1B302239376700074BA0 /* UIAnimationToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2F2239376700074BA0 /* UIAnimationToolboxTests.swift */; };
-		9C1B1B312239376700074BA0 /* UIAnimationToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2F2239376700074BA0 /* UIAnimationToolboxTests.swift */; };
-		9C1B1B382239518C00074BA0 /* UIAnimationTimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B352239518400074BA0 /* UIAnimationTimingTests.swift */; };
-		9C1B1B392239518C00074BA0 /* UIAnimationTimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B352239518400074BA0 /* UIAnimationTimingTests.swift */; };
+		9C1B1B382239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */; };
+		9C1B1B392239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */; };
 		9C1B1B3B2239547400074BA0 /* _UIBlockAnimationFactory3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */; };
 		9C1B1B3C2239547400074BA0 /* _UIBlockAnimationFactory3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */; };
 		9C1B1B3E2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */; };
@@ -130,6 +130,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C181290223CEACC00A6E1E4 /* UIAnimationActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationActionTests.swift; sourceTree = "<group>"; };
 		9C1B1A94223924C800074BA0 /* UIAnimationToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAnimationToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1B1A9C223924C800074BA0 /* UIAnimationToolbox-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAnimationToolbox-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1B1AB0223924DA00074BA0 /* UIAnimationToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAnimationToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,26 +142,25 @@
 		9C1B1ACC2239254E00074BA0 /* CATransaction+ToolboxAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransaction+ToolboxAddition.swift"; sourceTree = "<group>"; };
 		9C1B1ACE2239254E00074BA0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1B1ACF2239254E00074BA0 /* CALayer+ToolboxAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+ToolboxAddition.swift"; sourceTree = "<group>"; };
-		9C1B1AD02239254E00074BA0 /* AdditiveAnimationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditiveAnimationAction.swift; sourceTree = "<group>"; };
+		9C1B1AD02239254E00074BA0 /* CAAdditiveAnimationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAdditiveAnimationAction.swift; sourceTree = "<group>"; };
 		9C1B1AD22239254E00074BA0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1B1AF122392A5800074BA0 /* _UIAnimationTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIAnimationTemplate.swift; sourceTree = "<group>"; };
 		9C1B1AF222392A5800074BA0 /* _UISpringAnimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UISpringAnimationFactory.swift; sourceTree = "<group>"; };
 		9C1B1AF322392A5800074BA0 /* UIView+Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animate.swift"; sourceTree = "<group>"; };
 		9C1B1AF422392A5800074BA0 /* UIView+LayerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LayerAction.swift"; sourceTree = "<group>"; };
-		9C1B1AF522392A5800074BA0 /* UIAnimationActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimationActions.swift; sourceTree = "<group>"; };
+		9C1B1AF522392A5800074BA0 /* UIAnimationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimationAction.swift; sourceTree = "<group>"; };
 		9C1B1AF622392A5800074BA0 /* _UIAnimationContextInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIAnimationContextInternal.swift; sourceTree = "<group>"; };
-		9C1B1AF722392A5800074BA0 /* _UIViewAnimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIViewAnimationFactory.swift; sourceTree = "<group>"; };
+		9C1B1AF722392A5800074BA0 /* _UIAnimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIAnimationFactory.swift; sourceTree = "<group>"; };
 		9C1B1AF822392A5800074BA0 /* _UIBasicAnimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIBasicAnimationFactory.swift; sourceTree = "<group>"; };
 		9C1B1AF922392A5800074BA0 /* _UIBlockAnimationFactory5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory5.swift; sourceTree = "<group>"; };
 		9C1B1AFA22392A5800074BA0 /* UIView+AnimationInterpolator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AnimationInterpolator.swift"; sourceTree = "<group>"; };
 		9C1B1AFB22392A5900074BA0 /* UIAnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimationContext.swift; sourceTree = "<group>"; };
-		9C1B1AFC22392A5900074BA0 /* _UIAnimationTiming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIAnimationTiming.swift; sourceTree = "<group>"; };
+		9C1B1AFC22392A5900074BA0 /* UIAnimationTiming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimationTiming.swift; sourceTree = "<group>"; };
 		9C1B1AFD22392A5900074BA0 /* _UIAnimationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIAnimationAction.swift; sourceTree = "<group>"; };
 		9C1B1B2522392AA000074BA0 /* UIViewAnimationOptions+Curve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewAnimationOptions+Curve.swift"; sourceTree = "<group>"; };
 		9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UIAnimationToolbox.m"; sourceTree = "<group>"; };
 		9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___UIAnimationToolbox.swift"; sourceTree = "<group>"; };
-		9C1B1B2F2239376700074BA0 /* UIAnimationToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationToolboxTests.swift; sourceTree = "<group>"; };
-		9C1B1B352239518400074BA0 /* UIAnimationTimingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationTimingTests.swift; sourceTree = "<group>"; };
+		9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_AnimationsTimingTests.swift; sourceTree = "<group>"; };
 		9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory3.swift; sourceTree = "<group>"; };
 		9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory2.swift; sourceTree = "<group>"; };
 		9C1B1B402239567300074BA0 /* UIAnimationActionPresetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationActionPresetTests.swift; sourceTree = "<group>"; };
@@ -255,9 +255,9 @@
 			children = (
 				9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */,
 				9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */,
-				9C1B1AC92239254E00074BA0 /* _CAAnimationPrototypes.swift */,
 				9C1B1ACA2239254E00074BA0 /* _CAInterconvertible.swift */,
-				9C1B1AD02239254E00074BA0 /* AdditiveAnimationAction.swift */,
+				9C1B1AC92239254E00074BA0 /* _CAAnimationPrototypes.swift */,
+				9C1B1AD02239254E00074BA0 /* CAAdditiveAnimationAction.swift */,
 				9C1B1ACF2239254E00074BA0 /* CALayer+ToolboxAddition.swift */,
 				9C1B1AC82239254E00074BA0 /* CAMediaTiming+ToolboxAddition.swift */,
 				9C1B1ACB2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAddition.swift */,
@@ -265,16 +265,16 @@
 				9C1B1AF622392A5800074BA0 /* _UIAnimationContextInternal.swift */,
 				9C1B1AFD22392A5900074BA0 /* _UIAnimationAction.swift */,
 				9C1B1AF122392A5800074BA0 /* _UIAnimationTemplate.swift */,
-				9C1B1AF722392A5800074BA0 /* _UIViewAnimationFactory.swift */,
+				9C1B1AF722392A5800074BA0 /* _UIAnimationFactory.swift */,
 				9C1B1AF822392A5800074BA0 /* _UIBasicAnimationFactory.swift */,
 				9C1B1AF922392A5800074BA0 /* _UIBlockAnimationFactory5.swift */,
 				9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */,
 				9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */,
 				9C1B1AF222392A5800074BA0 /* _UISpringAnimationFactory.swift */,
 				9CBB7A9622396300001D6828 /* _UIAnimationInterpolating.swift */,
-				9C1B1AFC22392A5900074BA0 /* _UIAnimationTiming.swift */,
 				9C1B1AFB22392A5900074BA0 /* UIAnimationContext.swift */,
-				9C1B1AF522392A5800074BA0 /* UIAnimationActions.swift */,
+				9C1B1AF522392A5800074BA0 /* UIAnimationAction.swift */,
+				9C1B1AFC22392A5900074BA0 /* UIAnimationTiming.swift */,
 				9C1B1B2522392AA000074BA0 /* UIViewAnimationOptions+Curve.swift */,
 				9C1B1AF322392A5800074BA0 /* UIView+Animate.swift */,
 				9C1B1AF422392A5800074BA0 /* UIView+LayerAction.swift */,
@@ -290,8 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				9C1B1AD22239254E00074BA0 /* Info.plist */,
-				9C1B1B2F2239376700074BA0 /* UIAnimationToolboxTests.swift */,
-				9C1B1B352239518400074BA0 /* UIAnimationTimingTests.swift */,
+				9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */,
+				9C181290223CEACC00A6E1E4 /* UIAnimationActionTests.swift */,
 				9C1B1B402239567300074BA0 /* UIAnimationActionPresetTests.swift */,
 				9CBB7A8D223958E5001D6828 /* UIAnimationActionInferredTests.swift */,
 			);
@@ -533,8 +533,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1B1B2722392AA100074BA0 /* UIViewAnimationOptions+Curve.swift in Sources */,
-				9C1B1B2022392A5900074BA0 /* _UIAnimationTiming.swift in Sources */,
-				9C1B1B1122392A5900074BA0 /* _UIViewAnimationFactory.swift in Sources */,
+				9C1B1B2022392A5900074BA0 /* UIAnimationTiming.swift in Sources */,
+				9C1B1B1122392A5900074BA0 /* _UIAnimationFactory.swift in Sources */,
 				9C1B1B0522392A5900074BA0 /* UIView+Animate.swift in Sources */,
 				9C1B1AD42239254E00074BA0 /* CAMediaTiming+ToolboxAddition.swift in Sources */,
 				9C1B1B3C2239547400074BA0 /* _UIBlockAnimationFactory3.swift in Sources */,
@@ -544,7 +544,7 @@
 				9CBB7A9822396300001D6828 /* _UIAnimationInterpolating.swift in Sources */,
 				9C1B1B1722392A5900074BA0 /* _UIBlockAnimationFactory5.swift in Sources */,
 				9C1B1ADA2239254E00074BA0 /* _CAInterconvertible.swift in Sources */,
-				9C1B1AEC2239254E00074BA0 /* AdditiveAnimationAction.swift in Sources */,
+				9C1B1AEC2239254E00074BA0 /* CAAdditiveAnimationAction.swift in Sources */,
 				9C1B1B2E2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */,
 				9C1B1B3F2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */,
 				9C1B1ADD2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAddition.swift in Sources */,
@@ -559,7 +559,7 @@
 				9C1B1AD72239254E00074BA0 /* _CAAnimationPrototypes.swift in Sources */,
 				9C1B1B1422392A5900074BA0 /* _UIBasicAnimationFactory.swift in Sources */,
 				9C1B1B2322392A5900074BA0 /* _UIAnimationAction.swift in Sources */,
-				9C1B1B0B22392A5900074BA0 /* UIAnimationActions.swift in Sources */,
+				9C1B1B0B22392A5900074BA0 /* UIAnimationAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,8 +569,8 @@
 			files = (
 				9CBB7A8B223958D2001D6828 /* UIAnimationActionPresetTests.swift in Sources */,
 				9CBB7A8F223958E5001D6828 /* UIAnimationActionInferredTests.swift in Sources */,
-				9C1B1B392239518C00074BA0 /* UIAnimationTimingTests.swift in Sources */,
-				9C1B1B312239376700074BA0 /* UIAnimationToolboxTests.swift in Sources */,
+				9C181292223CEACC00A6E1E4 /* UIAnimationActionTests.swift in Sources */,
+				9C1B1B392239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,8 +579,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1B1B2822392AA100074BA0 /* UIViewAnimationOptions+Curve.swift in Sources */,
-				9C1B1B2122392A5900074BA0 /* _UIAnimationTiming.swift in Sources */,
-				9C1B1B1222392A5900074BA0 /* _UIViewAnimationFactory.swift in Sources */,
+				9C1B1B2122392A5900074BA0 /* UIAnimationTiming.swift in Sources */,
+				9C1B1B1222392A5900074BA0 /* _UIAnimationFactory.swift in Sources */,
 				9C1B1B0622392A5900074BA0 /* UIView+Animate.swift in Sources */,
 				9C1B1AD52239254E00074BA0 /* CAMediaTiming+ToolboxAddition.swift in Sources */,
 				9C1B1B3B2239547400074BA0 /* _UIBlockAnimationFactory3.swift in Sources */,
@@ -590,7 +590,7 @@
 				9CBB7A9722396300001D6828 /* _UIAnimationInterpolating.swift in Sources */,
 				9C1B1B1822392A5900074BA0 /* _UIBlockAnimationFactory5.swift in Sources */,
 				9C1B1ADB2239254E00074BA0 /* _CAInterconvertible.swift in Sources */,
-				9C1B1AED2239254E00074BA0 /* AdditiveAnimationAction.swift in Sources */,
+				9C1B1AED2239254E00074BA0 /* CAAdditiveAnimationAction.swift in Sources */,
 				9C1B1B2D2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */,
 				9C1B1B3E2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */,
 				9C1B1ADE2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAddition.swift in Sources */,
@@ -605,7 +605,7 @@
 				9C1B1AD82239254E00074BA0 /* _CAAnimationPrototypes.swift in Sources */,
 				9C1B1B1522392A5900074BA0 /* _UIBasicAnimationFactory.swift in Sources */,
 				9C1B1B2422392A5900074BA0 /* _UIAnimationAction.swift in Sources */,
-				9C1B1B0C22392A5900074BA0 /* UIAnimationActions.swift in Sources */,
+				9C1B1B0C22392A5900074BA0 /* UIAnimationAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,8 +615,8 @@
 			files = (
 				9CBB7A8C223958D3001D6828 /* UIAnimationActionPresetTests.swift in Sources */,
 				9CBB7A8E223958E5001D6828 /* UIAnimationActionInferredTests.swift in Sources */,
-				9C1B1B382239518C00074BA0 /* UIAnimationTimingTests.swift in Sources */,
-				9C1B1B302239376700074BA0 /* UIAnimationToolboxTests.swift in Sources */,
+				9C181291223CEACC00A6E1E4 /* UIAnimationActionTests.swift in Sources */,
+				9C1B1B382239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

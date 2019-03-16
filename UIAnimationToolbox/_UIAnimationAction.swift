@@ -23,10 +23,10 @@ internal class _UIAdditiveAnimationAction<A: CABasicAnimation>:
         return action.pendingAnimation
     }
     
-    internal let action: AdditiveAnimationAction<A>
+    internal let action: CAAdditiveAnimationAction<A>
     
     internal init(layer: CALayer, event: String, pendingAnimation: Animation) {
-        action = AdditiveAnimationAction(
+        action = CAAdditiveAnimationAction(
             layer: layer, event: event, pendingAnimation: pendingAnimation
         )
     }

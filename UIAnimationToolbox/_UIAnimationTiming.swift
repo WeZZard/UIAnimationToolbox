@@ -1,5 +1,5 @@
 //
-//  _UIAnimationTiming.swift
+//  UIAnimationTiming.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 1/29/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal struct _UIAnimationTiming {
+public struct UIAnimationTiming {
     internal let beginTime: TimeInterval?
     internal let duration: TimeInterval?
     internal let speed: CGFloat?
@@ -39,15 +39,14 @@ internal struct _UIAnimationTiming {
     internal func shift(_ action: CAAction) {
         if let mediaTiming = action as? CAMediaTiming {
             _shift(mediaTiming)
-        } else if let pendingAnimation
-            = (action as? NSObject)?.value(forKey: "pendingAnimation")
-                as? CAMediaTiming
+        } else if let mediaTiming = (action as? NSObject)?
+            .value(forKey: "pendingAnimation") as? CAMediaTiming
         {
-            _shift(pendingAnimation)
+            _shift(mediaTiming)
         } else if action is NSNull {
             // Do nothing
         } else {
-            debugPrint("Unable to recognize action: \(action)")
+            debugPrint("Unable to recognize action \(action) while shifting its timing.")
         }
     }
     

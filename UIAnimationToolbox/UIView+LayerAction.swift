@@ -33,7 +33,7 @@ private let _actionForLayerForKey: _CALayerDelegateActionForLayerForKey = {
             )
         {
             if let timing = context.currentAnimationTiming {
-                timing.shift(originalAction)
+                timing._shiftAction(originalAction)
             }
             
             return originalAction

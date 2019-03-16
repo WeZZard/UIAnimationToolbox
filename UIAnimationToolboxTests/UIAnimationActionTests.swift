@@ -1,8 +1,8 @@
 //
-//  UIAnimationActionPresetTests.swift
+//  UIAnimationActionTests.swift
 //  UIAnimationToolbox
 //
-//  Created by WeZZard on 2019/3/13.
+//  Created on 2019/3/16.
 //
 
 import XCTest
@@ -10,11 +10,11 @@ import XCTest
 @testable
 import UIAnimationToolbox
 
-class UIAnimationActionPresetTests: XCTestCase {
+class UIAnimationActionTests: XCTestCase {
     // MARK: - Init with Layer Event
     func testInitWithLayerEvent_returnsNil_whenCalledOutsideAnimationBlock() {
         let layer = CALayer()
-        let action = UIAnimationActionPreset(layer: layer, event: "bounds.size")
+        let action = UIAnimationAction(layer: layer, event: "bounds.size", style: .preset)
         XCTAssertNil(action)
     }
     
@@ -22,7 +22,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: CAAction!
         UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
-            action = UIAnimationActionPreset(layer: layer, event: "bounds.size")
+            action = UIAnimationAction(layer: layer, event: "bounds.size", style: .preset)
         }, completion: nil)
         XCTAssertNotNil(action)
     }
@@ -31,7 +31,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: CAAction!
         UIView.animate(withDuration: 0.3, animations: {
-            action = UIAnimationActionPreset(layer: layer, event: "bounds.size")
+            action = UIAnimationAction(layer: layer, event: "bounds.size", style: .preset)
         }, completion: nil)
         XCTAssertNotNil(action)
     }
@@ -40,7 +40,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: CAAction!
         UIView.animate(withDuration: 0.3, animations: {
-            action = UIAnimationActionPreset(layer: layer, event: "bounds.size")
+            action = UIAnimationAction(layer: layer, event: "bounds.size", style: .preset)
         })
         XCTAssertNotNil(action)
     }
@@ -49,7 +49,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: CAAction!
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [], animations: {
-            action = UIAnimationActionPreset(layer: layer, event: "bounds.size")
+            action = UIAnimationAction(layer: layer, event: "bounds.size", style: .preset)
         }, completion: nil)
         XCTAssertNotNil(action)
     }
@@ -57,7 +57,7 @@ class UIAnimationActionPresetTests: XCTestCase {
     // MARK: - Make with Layer Event
     func testMakeLayerEvent_returnsInstanceOfNSNull_whenCalledOutsideAnimationBlock() {
         let layer = CALayer()
-        let action = UIAnimationActionPreset.make(layer: layer, event: "bounds.size")
+        let action = UIAnimationAction.make(layer: layer, event: "bounds.size", style: .preset)
         XCTAssertTrue(action is NSNull)
     }
     
@@ -65,7 +65,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: AnyObject!
         UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
-            action = UIAnimationActionPreset.make(layer: layer, event: "bounds.size")
+            action = UIAnimationAction.make(layer: layer, event: "bounds.size", style: .preset)
         })
         XCTAssertTrue(action is CAAction)
     }
@@ -74,7 +74,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: AnyObject!
         UIView.animate(withDuration: 0.3, animations: {
-            action = UIAnimationActionPreset.make(layer: layer, event: "bounds.size")
+            action = UIAnimationAction.make(layer: layer, event: "bounds.size", style: .preset)
         }, completion: nil)
         XCTAssertTrue(action is CAAction)
     }
@@ -84,7 +84,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: AnyObject!
         UIView.animate(withDuration: 0.3, animations: {
-            action = UIAnimationActionPreset.make(layer: layer, event: "bounds.size")
+            action = UIAnimationAction.make(layer: layer, event: "bounds.size", style: .preset)
         })
         XCTAssertTrue(action is CAAction)
     }
@@ -93,7 +93,7 @@ class UIAnimationActionPresetTests: XCTestCase {
         let layer = CALayer()
         var action: AnyObject!
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [], animations: {
-            action = UIAnimationActionPreset.make(layer: layer, event: "bounds.size")
+            action = UIAnimationAction.make(layer: layer, event: "bounds.size", style: .preset)
         }, completion: nil)
         XCTAssertTrue(action is CAAction)
     }

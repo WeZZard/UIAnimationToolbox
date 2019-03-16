@@ -30,6 +30,7 @@ internal class _UIAnimationInterpolateWindow: UIWindow {
     }
 }
 
+
 internal class _UIAnimationInterpolator: _UIAnimationInterpolatorViewDelegate {
     private var _impl: _UIAnimationInterpolatorView!
     
@@ -63,12 +64,14 @@ internal class _UIAnimationInterpolator: _UIAnimationInterpolatorViewDelegate {
     }
 }
 
+
 internal protocol _UIAnimationInterpolatorViewDelegate: class {
     func animationInterpolatorView(
         _ sender: _UIAnimationInterpolatorView,
         didChangeProgress progress: CGFloat
     )
 }
+
 
 internal class _UIAnimationInterpolatorView: UIView {
     internal unowned let delegate: _UIAnimationInterpolatorViewDelegate
@@ -88,8 +91,7 @@ internal class _UIAnimationInterpolatorView: UIView {
         aCoder.encode(delegate, forKey: "delegate")
     }
     
-    @objc
-    internal dynamic var progress: CGFloat {
+    internal var progress: CGFloat {
         get { return _layer.progress }
         set { _layer.progress = newValue }
     }
@@ -133,6 +135,7 @@ internal class _UIAnimationInterpolatorView: UIView {
         delegate.animationInterpolatorView(self, didChangeProgress: progress)
     }
 }
+
 
 internal class _UIAnimationInterpolatorLayer: CALayer {
     @NSManaged

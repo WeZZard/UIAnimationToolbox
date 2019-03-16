@@ -1,5 +1,5 @@
 //
-//  UIAnimationTimingTests.swift
+//  UIView_AnimationsTimingTests.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 2019/3/13.
@@ -8,7 +8,7 @@
 import XCTest
 import UIAnimationToolbox
 
-class UIAnimationTimingTests: XCTestCase {
+class UIView_AnimationsTimingTests: XCTestCase {
     func testShiftAnimationsTiming_works_inAnimateWithDurationAnimations() {
         let parent = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         let child = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
