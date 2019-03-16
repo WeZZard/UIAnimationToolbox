@@ -102,8 +102,8 @@ Then build the relationship between the backward layer and the view
 ```swift
 class View: UIView {
     var animatedProperty: CGFloat {
-        get { return _layer.hour }
-        set { _layer.hour = newValue }
+        get { return _layer.animatedProperty }
+        set { _layer.animatedProperty = newValue }
     }
 
     override class var layerClass: AnyClass {

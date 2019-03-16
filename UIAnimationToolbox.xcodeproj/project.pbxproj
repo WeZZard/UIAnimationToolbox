@@ -21,6 +21,8 @@
 		9C1812AE223CF20E00A6E1E4 /* _UIAnimationInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1812AC223CF20E00A6E1E4 /* _UIAnimationInterpolator.swift */; };
 		9C1812B0223CF22800A6E1E4 /* _UIAnimationInterpolatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1812AF223CF22800A6E1E4 /* _UIAnimationInterpolatorView.swift */; };
 		9C1812B1223CF22800A6E1E4 /* _UIAnimationInterpolatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1812AF223CF22800A6E1E4 /* _UIAnimationInterpolatorView.swift */; };
+		9C1812B5223CF73500A6E1E4 /* UIPropertyAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1812B4223CF73500A6E1E4 /* UIPropertyAnimationTests.swift */; };
+		9C1812B6223CF73500A6E1E4 /* UIPropertyAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1812B4223CF73500A6E1E4 /* UIPropertyAnimationTests.swift */; };
 		9C1B1A9D223924C800074BA0 /* UIAnimationToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1B1A94223924C800074BA0 /* UIAnimationToolbox.framework */; };
 		9C1B1AB9223924DB00074BA0 /* UIAnimationToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1B1AB0223924DA00074BA0 /* UIAnimationToolbox.framework */; };
 		9C1B1AD42239254E00074BA0 /* CAMediaTiming+ToolboxAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1AC82239254E00074BA0 /* CAMediaTiming+ToolboxAdditions.swift */; };
@@ -149,6 +151,7 @@
 		9C1812A9223CF1F500A6E1E4 /* _UIAnimationInterpolateWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIAnimationInterpolateWindow.swift; sourceTree = "<group>"; };
 		9C1812AC223CF20E00A6E1E4 /* _UIAnimationInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIAnimationInterpolator.swift; sourceTree = "<group>"; };
 		9C1812AF223CF22800A6E1E4 /* _UIAnimationInterpolatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIAnimationInterpolatorView.swift; sourceTree = "<group>"; };
+		9C1812B4223CF73500A6E1E4 /* UIPropertyAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPropertyAnimationTests.swift; sourceTree = "<group>"; };
 		9C1B1A94223924C800074BA0 /* UIAnimationToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAnimationToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1B1A9C223924C800074BA0 /* UIAnimationToolbox-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAnimationToolbox-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1B1AB0223924DA00074BA0 /* UIAnimationToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAnimationToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,6 +425,7 @@
 				9C181290223CEACC00A6E1E4 /* UIAnimationActionTests.swift */,
 				9C1B1B402239567300074BA0 /* UIAnimationActionPresetTests.swift */,
 				9CBB7A8D223958E5001D6828 /* UIAnimationActionInferredTests.swift */,
+				9C1812B4223CF73500A6E1E4 /* UIPropertyAnimationTests.swift */,
 			);
 			path = UIAnimationToolboxTests;
 			sourceTree = "<group>";
@@ -703,6 +707,7 @@
 			files = (
 				9CBB7A8B223958D2001D6828 /* UIAnimationActionPresetTests.swift in Sources */,
 				9CBB7A8F223958E5001D6828 /* UIAnimationActionInferredTests.swift in Sources */,
+				9C1812B6223CF73500A6E1E4 /* UIPropertyAnimationTests.swift in Sources */,
 				9C181292223CEACC00A6E1E4 /* UIAnimationActionTests.swift in Sources */,
 				9C1B1B392239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */,
 			);
@@ -755,6 +760,7 @@
 			files = (
 				9CBB7A8C223958D3001D6828 /* UIAnimationActionPresetTests.swift in Sources */,
 				9CBB7A8E223958E5001D6828 /* UIAnimationActionInferredTests.swift in Sources */,
+				9C1812B5223CF73500A6E1E4 /* UIPropertyAnimationTests.swift in Sources */,
 				9C181291223CEACC00A6E1E4 /* UIAnimationActionTests.swift in Sources */,
 				9C1B1B382239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */,
 			);
