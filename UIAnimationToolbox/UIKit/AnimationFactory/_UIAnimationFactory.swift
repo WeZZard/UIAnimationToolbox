@@ -9,7 +9,7 @@
 import UIKit
 
 internal class _UIAnimationFactory<
-    A: CAAnimation, P: _CAAnimationInterconvertible
+    A: CAAnimation, P: _CAAnimationProtocol
     >: NSObject, _UIAnimationContextInternal where P.Animation == A
 {
     internal init(duration: TimeInterval, delay: TimeInterval) {

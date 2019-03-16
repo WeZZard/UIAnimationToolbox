@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIView {
-    // TODO: Add an animation interpolator with identifier.
     public static func addAnimationInterpolator(
         _ interpolator: @escaping (_ progress : CGFloat) -> Void
         )

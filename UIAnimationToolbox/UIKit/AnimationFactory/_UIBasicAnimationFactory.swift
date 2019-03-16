@@ -9,7 +9,7 @@
 import UIKit
 
 internal class _UIBasicAnimationFactory<
-    A: CABasicAnimation, P: _CABasicAnimationInterconvertible
+    A: CABasicAnimation, P: _CABasicAnimationProtocol
     >: _UIAnimationFactory<A, P> where
     P.Animation == A
 {
@@ -55,7 +55,7 @@ internal class _UIBasicAnimationFactory<
                 }
                 
                 // Returns the action
-                return _UIAdditiveAnimationAction(
+                return _UIAnimationFactoryAdditiveAction(
                     layer: layer,
                     event: event,
                     pendingAnimation: pendingAnimation

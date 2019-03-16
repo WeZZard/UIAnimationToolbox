@@ -1,21 +1,14 @@
 //
-//  _UIAnimationAction.swift
+//  _UIAnimationFactoryAdditiveAction.swift
 //  UIAnimationToolbox
 //
-//  Created by WeZZard on 1/29/16.
-//
+//  Created on 2019/3/16.
 //
 
 import UIKit
 
-//MARK: - _UIAnimationAction
-internal protocol _UIAnimationAction: CAAction {
-    associatedtype Animation: CAAnimation
-}
-
-//MARK: - _UIAdditiveAnimationAction
-internal class _UIAdditiveAnimationAction<A: CABasicAnimation>:
-    _UIAnimationAction
+internal class _UIAnimationFactoryAdditiveAction<A: CABasicAnimation>:
+    _UIAnimationFactoryAction
 {
     internal typealias Animation = A
     
@@ -23,10 +16,10 @@ internal class _UIAdditiveAnimationAction<A: CABasicAnimation>:
         return action.pendingAnimation
     }
     
-    internal let action: CAAdditiveAnimationAction<A>
+    internal let action: CABasicAnimationAdditiveAction<A>
     
     internal init(layer: CALayer, event: String, pendingAnimation: Animation) {
-        action = CAAdditiveAnimationAction(
+        action = CABasicAnimationAdditiveAction(
             layer: layer, event: event, pendingAnimation: pendingAnimation
         )
     }

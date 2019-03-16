@@ -11,7 +11,16 @@ import XCTest
 import UIAnimationToolbox
 
 class UIAnimationActionTests: XCTestCase {
-    // MARK: - Init with Layer Event
+    // MARK: - Init with Action and Style
+    func testInitWithActionStyle() {
+        let internalAction = NSNull()
+        let style = UIAnimationActionStyle.inferred
+        let action = UIAnimationAction(action: internalAction, style: .inferred)
+        XCTAssert(action._action === internalAction)
+        XCTAssert(action._style == style)
+    }
+    
+    // MARK: - Init with Layer and Event
     func testInitWithLayerEvent_returnsNil_whenCalledOutsideAnimationBlock() {
         let layer = CALayer()
         let action = UIAnimationAction(layer: layer, event: "bounds.size", style: .preset)
@@ -78,7 +87,6 @@ class UIAnimationActionTests: XCTestCase {
         }, completion: nil)
         XCTAssertTrue(action is CAAction)
     }
-    
     
     func testMakeLayerEvent_returnsInstanceOfCAAction_whenCalledInsideBlockOfBlockAnimation2() {
         let layer = CALayer()

@@ -8,7 +8,7 @@
 
 import QuartzCore
 
-internal class _CABasicAnimationPrototype: _CABasicAnimationInterconvertible {
+internal class _CABasicAnimationPrototype: _CABasicAnimationProtocol {
     internal typealias Animation = CABasicAnimation
     
     internal var beginTime: CFTimeInterval
@@ -62,7 +62,7 @@ internal class _CABasicAnimationPrototype: _CABasicAnimationInterconvertible {
 
 
 @available(macOS 10.11, iOS 9.0, *)
-internal class _CASpringAnimationPrototype: _CASpringAnimationInterconvertible {
+internal class _CASpringAnimationPrototype: _CASpringAnimationProtocol {
     internal typealias Animation = CASpringAnimation
     
     internal var beginTime: CFTimeInterval
@@ -129,7 +129,7 @@ internal class _CASpringAnimationPrototype: _CASpringAnimationInterconvertible {
 
 
 internal  class _CAKeyframeAnimationPrototype:
-    _CAKeyframeAnimationInterconvertible
+    _CAKeyframeAnimationProtocol
 {
     internal typealias Animation = CAKeyframeAnimation
     
@@ -205,7 +205,7 @@ internal  class _CAKeyframeAnimationPrototype:
 }
 
 
-internal class _CATransitionPrototype: _CATransitionInterconvertible {
+internal class _CATransitionPrototype: _CATransitionProtocol {
     internal typealias Animation = CATransition
     
     internal var beginTime: CFTimeInterval

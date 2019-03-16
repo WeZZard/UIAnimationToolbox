@@ -1,5 +1,5 @@
 //
-//  UIViewAnimationOptions+Curve.swift
+//  UIViewAnimationOptions+ToolboxAdditions.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 8/26/16.

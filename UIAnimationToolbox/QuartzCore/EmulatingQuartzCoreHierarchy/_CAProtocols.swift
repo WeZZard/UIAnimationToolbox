@@ -8,7 +8,7 @@
 
 import QuartzCore
 
-internal protocol _CAMediaTimingInterconvertible {
+internal protocol _CAMediaTimingProtocol {
     var beginTime: CFTimeInterval { get }
     var timeOffset: TimeInterval { get }
     var repeatCount: Float { get }
@@ -19,7 +19,7 @@ internal protocol _CAMediaTimingInterconvertible {
     var fillMode: CAMediaTimingFillMode { get }
 }
 
-internal protocol _CAAnimationInterconvertible: _CAMediaTimingInterconvertible {
+internal protocol _CAAnimationProtocol: _CAMediaTimingProtocol {
     associatedtype Animation
     
     var isRemovedOnCompletion: Bool { get }
@@ -30,25 +30,23 @@ internal protocol _CAAnimationInterconvertible: _CAMediaTimingInterconvertible {
     func apply(on animation: Animation)
 }
 
-internal protocol _CATransitionInterconvertible: _CAAnimationInterconvertible {
-    
-}
+internal protocol _CATransitionProtocol: _CAAnimationProtocol { }
 
-internal protocol _CAPropertyAnimationInterconvertible:
-    _CAAnimationInterconvertible
+internal protocol _CAPropertyAnimationProtocol:
+    _CAAnimationProtocol
 {
     var cumulative: Bool { get }
     var additive: Bool { get }
 }
 
-internal protocol _CABasicAnimationInterconvertible:
-    _CAPropertyAnimationInterconvertible
+internal protocol _CABasicAnimationProtocol:
+    _CAPropertyAnimationProtocol
 {
     
 }
 
-internal protocol _CASpringAnimationInterconvertible:
-    _CABasicAnimationInterconvertible
+internal protocol _CASpringAnimationProtocol:
+    _CABasicAnimationProtocol
 {
     var mass: CGFloat { get }
     var stiffness: CGFloat { get }
@@ -56,8 +54,8 @@ internal protocol _CASpringAnimationInterconvertible:
     var initialVelocity: CGFloat { get }
 }
 
-internal protocol _CAKeyframeAnimationInterconvertible:
-    _CAPropertyAnimationInterconvertible
+internal protocol _CAKeyframeAnimationProtocol:
+    _CAPropertyAnimationProtocol
 {
     var keyTimes: [NSNumber]? { get }
     var timingFunctions: [CAMediaTimingFunction]? { get }

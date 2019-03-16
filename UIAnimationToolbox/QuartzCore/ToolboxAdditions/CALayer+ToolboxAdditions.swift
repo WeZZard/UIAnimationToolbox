@@ -1,5 +1,5 @@
 //
-//  CALayer+ToolboxAddition.swift
+//  CALayer+ToolboxAdditions.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 1/2/16.
@@ -34,25 +34,25 @@ extension CALayer {
 }
 
 extension CALayer {
-    @objc(ATCAPropertyAnimationAdditivePolicy)
+    @objc(UIATCAPropertyAnimationAdditivePolicy)
     public enum AdditivePolicy: Int, CustomStringConvertible,
         CustomDebugStringConvertible
     {
-        @objc(ATCAPropertyAnimationAdditivePolicyNone)
+        @objc(UIATCAPropertyAnimationAdditivePolicyNone)
         case none
-        @objc(ATCAPropertyAnimationAdditivePolicyCGRect)
+        @objc(UIATCAPropertyAnimationAdditivePolicyCGRect)
         case cgRect
-        @objc(ATCAPropertyAnimationAdditivePolicyCGSize)
+        @objc(UIATCAPropertyAnimationAdditivePolicyCGSize)
         case cgSize
-        @objc(ATCAPropertyAnimationAdditivePolicyCGPoint)
+        @objc(UIATCAPropertyAnimationAdditivePolicyCGPoint)
         case cgPoint
-        @objc(ATCAPropertyAnimationAdditivePolicyCGVector)
+        @objc(UIATCAPropertyAnimationAdditivePolicyCGVector)
         case cgVector
-        @objc(ATCAPropertyAnimationAdditivePolicyCATransform3D)
+        @objc(UIATCAPropertyAnimationAdditivePolicyCATransform3D)
         case caTransform3D
-        @objc(ATCAPropertyAnimationAdditivePolicyFloat)
+        @objc(UIATCAPropertyAnimationAdditivePolicyFloat)
         case float
-        @objc(ATCAPropertyAnimationAdditivePolicyDouble)
+        @objc(UIATCAPropertyAnimationAdditivePolicyDouble)
         case double
         
         public var description: String {
@@ -73,15 +73,15 @@ extension CALayer {
         }
     }
     
-    @objc(at_additivePolicyForKey:)
+    @objc(uiat_additivePolicyForKey:)
     open class func additivePolicy(forKey event: String)
         -> AdditivePolicy
     {
         switch event {
-        case "opacity":         return .none
-        // `opacity` cannot be additive, perhaps because it's clamped.
-        // `shadowOpacity` is also clamped.
-        case "shadowOpacity":   return .none
+        case "opacity", "shadowOpacity":
+            // `opacity` cannot be additive, perhaps because it's clamped.
+            // `shadowOpacity` is also clamped.
+            return .none
         default:
             guard let encoding = objectiveCEncoding(forKey: event) else {
                 return .none
@@ -91,7 +91,7 @@ extension CALayer {
         }
     }
     
-    @objc(at_additivePolicyForEncoding:)
+    @objc(uiat_additivePolicyForEncoding:)
     open class func additivePolicy(forEncoding encoding: String)
         -> AdditivePolicy
     {

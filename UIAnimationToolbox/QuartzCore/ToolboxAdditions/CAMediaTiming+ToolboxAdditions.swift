@@ -1,5 +1,5 @@
 //
-//  CAMediaTiming+ToolboxAddition.swift
+//  CAMediaTiming+ToolboxAdditions.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 11/20/15.

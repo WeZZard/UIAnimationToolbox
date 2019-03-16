@@ -1,5 +1,5 @@
 //
-//  CAMediaTimingFunction+ToolboxAddition.swift
+//  CAMediaTimingFunction+ToolboxAdditions.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 11/20/15.
@@ -37,7 +37,7 @@ extension CAMediaTimingFunction {
 extension CAMediaTimingFunction {
     private typealias _CGFloat4 = (CGFloat, CGFloat, CGFloat, CGFloat)
     
-    @objc(at_evaluateYForX:)
+    @objc(uiat_evaluateYForX:)
     public func evaluateY(forX x: CGFloat) -> CGFloat {
         precondition(
             MemoryLayout<_CGFloat4>.size == 4 * MemoryLayout<CGFloat>.size

@@ -9,7 +9,7 @@
 import UIKit
 
 internal class _UIAnimationTemplate<
-    A: CAAnimation, P: _CAAnimationInterconvertible
+    A: CAAnimation, P: _CAAnimationProtocol
     >: UIView where A == P.Animation
 {
     internal typealias Animation = A

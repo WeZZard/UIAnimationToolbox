@@ -1,5 +1,5 @@
 //
-//  CAAdditiveAnimationAction.swift
+//  CABasicAnimationAdditiveAction.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 15/01/2017.
@@ -8,13 +8,14 @@
 
 import QuartzCore
 
-/// Finalize a `CABasicAnimation`'s `toValue`. You may fill its `fromValue` by 
-/// yourself, typically before returning the action to a layer in the layer's 
-/// delegate method.
+/// Finalize a `CABasicAnimation`'s `toValue`. You may fill its
+/// `fromValue` by yourself, typically before returning the action to a
+/// layer in the layer's delegate method.
 ///
-/// This class may enabled the animation's `isAdditive` property when possible.
+/// This class may enabled the animation's `isAdditive` property when
+/// possible.
 ///
-open class CAAdditiveAnimationAction<Animation: CABasicAnimation>:
+open class CABasicAnimationAdditiveAction<Animation: CABasicAnimation>:
     NSObject, CAAction
 {
     open unowned var layer: CALayer
@@ -159,5 +160,5 @@ open class CAAdditiveAnimationAction<Animation: CABasicAnimation>:
     }
 }
 
-@available(*, renamed: "CAAdditiveAnimationAction")
-public typealias AdditiveAnimationAction = CAAdditiveAnimationAction
+@available(*, renamed: "CABasicAnimationAdditiveAction")
+public typealias AdditiveAnimationAction = CABasicAnimationAdditiveAction

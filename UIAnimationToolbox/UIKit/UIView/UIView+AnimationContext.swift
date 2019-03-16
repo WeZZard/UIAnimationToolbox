@@ -20,3 +20,11 @@ extension UIView {
         return UIView.currentAnimationContext
     }
 }
+
+extension UIView {
+    internal static var _animationContexts = [_UIAnimationContextInternal]()
+    
+    internal static var _currentAnimationContext: _UIAnimationContextInternal? {
+        return UIView._animationContexts.last
+    }
+}
