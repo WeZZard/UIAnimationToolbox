@@ -22,7 +22,7 @@ internal protocol _CAMediaTimingInterconvertible {
 internal protocol _CAAnimationInterconvertible: _CAMediaTimingInterconvertible {
     associatedtype Animation
     
-    var removedOnCompletion: Bool { get }
+    var isRemovedOnCompletion: Bool { get }
     var timingFunction: CAMediaTimingFunction? { get }
     var delegate: CAAnimationDelegate? { get }
     

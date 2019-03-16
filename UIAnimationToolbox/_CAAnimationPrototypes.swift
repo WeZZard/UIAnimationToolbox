@@ -20,7 +20,7 @@ internal class _CABasicAnimationPrototype: _CABasicAnimationInterconvertible {
     internal var autoreverses: Bool
     internal var fillMode: CAMediaTimingFillMode
     
-    internal var removedOnCompletion: Bool
+    internal var isRemovedOnCompletion: Bool
     internal var timingFunction: CAMediaTimingFunction?
     internal var delegate: CAAnimationDelegate?
     
@@ -36,7 +36,7 @@ internal class _CABasicAnimationPrototype: _CABasicAnimationInterconvertible {
         speed = animation.speed
         autoreverses = animation.autoreverses
         fillMode = animation.fillMode
-        removedOnCompletion = animation.isRemovedOnCompletion
+        isRemovedOnCompletion = animation.isRemovedOnCompletion
         timingFunction = animation.timingFunction
         delegate = animation.delegate
         cumulative = animation.isCumulative
@@ -52,7 +52,7 @@ internal class _CABasicAnimationPrototype: _CABasicAnimationInterconvertible {
         animation.speed = speed
         animation.autoreverses = autoreverses
         animation.fillMode = fillMode
-        animation.isRemovedOnCompletion = removedOnCompletion
+        animation.isRemovedOnCompletion = isRemovedOnCompletion
         animation.timingFunction = timingFunction
         animation.delegate = delegate
         animation.isCumulative = cumulative
@@ -74,7 +74,7 @@ internal class _CASpringAnimationPrototype: _CASpringAnimationInterconvertible {
     internal var autoreverses: Bool
     internal var fillMode: CAMediaTimingFillMode
     
-    internal var removedOnCompletion: Bool
+    internal var isRemovedOnCompletion: Bool
     internal var timingFunction: CAMediaTimingFunction?
     internal var delegate: CAAnimationDelegate?
     
@@ -95,7 +95,7 @@ internal class _CASpringAnimationPrototype: _CASpringAnimationInterconvertible {
         speed = animation.speed
         autoreverses = animation.autoreverses
         fillMode = animation.fillMode
-        removedOnCompletion = animation.isRemovedOnCompletion
+        isRemovedOnCompletion = animation.isRemovedOnCompletion
         timingFunction = animation.timingFunction
         delegate = animation.delegate
         cumulative = animation.isCumulative
@@ -115,7 +115,7 @@ internal class _CASpringAnimationPrototype: _CASpringAnimationInterconvertible {
         animation.speed = speed
         animation.autoreverses = autoreverses
         animation.fillMode = fillMode
-        animation.isRemovedOnCompletion = removedOnCompletion
+        animation.isRemovedOnCompletion = isRemovedOnCompletion
         animation.timingFunction = timingFunction
         animation.delegate = delegate
         animation.isCumulative = cumulative
@@ -142,7 +142,7 @@ internal  class _CAKeyframeAnimationPrototype:
     internal var autoreverses: Bool
     internal var fillMode: CAMediaTimingFillMode
     
-    internal var removedOnCompletion: Bool
+    internal var isRemovedOnCompletion: Bool
     internal var timingFunction: CAMediaTimingFunction?
     internal var delegate: CAAnimationDelegate?
     
@@ -166,7 +166,7 @@ internal  class _CAKeyframeAnimationPrototype:
         speed = animation.speed
         autoreverses = animation.autoreverses
         fillMode = animation.fillMode
-        removedOnCompletion = animation.isRemovedOnCompletion
+        isRemovedOnCompletion = animation.isRemovedOnCompletion
         timingFunction = animation.timingFunction
         delegate = animation.delegate
         cumulative = animation.isCumulative
@@ -189,7 +189,7 @@ internal  class _CAKeyframeAnimationPrototype:
         animation.speed = speed
         animation.autoreverses = autoreverses
         animation.fillMode = fillMode
-        animation.isRemovedOnCompletion = removedOnCompletion
+        animation.isRemovedOnCompletion = isRemovedOnCompletion
         animation.timingFunction = timingFunction
         animation.delegate = delegate
         animation.isCumulative = cumulative
@@ -217,7 +217,7 @@ internal class _CATransitionPrototype: _CATransitionInterconvertible {
     internal var autoreverses: Bool
     internal var fillMode: CAMediaTimingFillMode
     
-    internal var removedOnCompletion: Bool
+    internal var isRemovedOnCompletion: Bool
     internal var timingFunction: CAMediaTimingFunction?
     internal var delegate: CAAnimationDelegate?
     
@@ -230,7 +230,7 @@ internal class _CATransitionPrototype: _CATransitionInterconvertible {
         speed = animation.speed
         autoreverses = animation.autoreverses
         fillMode = animation.fillMode
-        removedOnCompletion = animation.isRemovedOnCompletion
+        isRemovedOnCompletion = animation.isRemovedOnCompletion
         timingFunction = animation.timingFunction
         delegate = animation.delegate
     }
@@ -244,7 +244,7 @@ internal class _CATransitionPrototype: _CATransitionInterconvertible {
         animation.speed = speed
         animation.autoreverses = autoreverses
         animation.fillMode = fillMode
-        animation.isRemovedOnCompletion = removedOnCompletion
+        animation.isRemovedOnCompletion = isRemovedOnCompletion
         animation.timingFunction = timingFunction
         animation.delegate = delegate
     }
