@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
+               BuildableName = "UIAnimationToolbox.framework"
+               BlueprintName = "UIAnimationToolbox-iOS"
+               ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -32,6 +46,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9C1B1AB7223924DB00074BA0"
+               BuildableName = "UIAnimationToolbox-iOSTests.xctest"
+               BlueprintName = "UIAnimationToolbox-iOSTests"
+               ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C1B1A9B223924C800074BA0"
                BuildableName = "UIAnimationToolbox-tvOSTests.xctest"
                BlueprintName = "UIAnimationToolbox-tvOSTests"
@@ -42,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C1B1A93223924C800074BA0"
+            BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
             BuildableName = "UIAnimationToolbox.framework"
-            BlueprintName = "UIAnimationToolbox-tvOS"
+            BlueprintName = "UIAnimationToolbox-iOS"
             ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +88,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C1B1A93223924C800074BA0"
+            BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
             BuildableName = "UIAnimationToolbox.framework"
-            BlueprintName = "UIAnimationToolbox-tvOS"
+            BlueprintName = "UIAnimationToolbox-iOS"
             ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +106,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C1B1A93223924C800074BA0"
+            BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
             BuildableName = "UIAnimationToolbox.framework"
-            BlueprintName = "UIAnimationToolbox-tvOS"
+            BlueprintName = "UIAnimationToolbox-iOS"
             ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

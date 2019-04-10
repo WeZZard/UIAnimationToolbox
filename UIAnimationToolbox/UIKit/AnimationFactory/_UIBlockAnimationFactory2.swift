@@ -13,7 +13,7 @@ internal class _UIBlockAnimationFactory2:
     _CABasicAnimationPrototype
     >
 {
-    internal typealias OriginalImplementation = _UIViewAnimateWithDurationAnimations
+    internal typealias OriginalImplementation = _UIViewAnimateWithDuration2
     
     private let _selector: Selector
     private let _originalImpl: OriginalImplementation

@@ -13,9 +13,9 @@ public class ___UIAnimationToolbox: NSObject {
         struct Token {
             static var once: Bool = {
                 _swizzleCALayerDelegateActionForLayerForKey()
-                _swizzleAnimateWithDurationDelayOptionsAnimationCompletion()
-                _swizzleAnimateWithDurationAnimationCompletion()
-                _swizzleAnimateWithDurationAnimations()
+                _swizzleAnimateWithDuration5()
+                _swizzleAnimateWithDuration3()
+                _swizzleAnimateWithDuration2()
                 if #available(iOS 9.0, *) {
                     _swizzleSpringAnimationAPI()
                 }

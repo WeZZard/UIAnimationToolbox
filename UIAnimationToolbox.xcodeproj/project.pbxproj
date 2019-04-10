@@ -77,6 +77,10 @@
 		9C1B1B3C2239547400074BA0 /* _UIBlockAnimationFactory3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */; };
 		9C1B1B3E2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */; };
 		9C1B1B3F2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */; };
+		9C5AF38B225D65A30077D192 /* _UIKeyframeAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AF38A225D65A30077D192 /* _UIKeyframeAnimationFactory.swift */; };
+		9C5AF38C225D65A30077D192 /* _UIKeyframeAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AF38A225D65A30077D192 /* _UIKeyframeAnimationFactory.swift */; };
+		9C5AF38E225D65B60077D192 /* _UIConventionalAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AF38D225D65B60077D192 /* _UIConventionalAnimationFactory.swift */; };
+		9C5AF38F225D65B60077D192 /* _UIConventionalAnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AF38D225D65B60077D192 /* _UIConventionalAnimationFactory.swift */; };
 		9CBB7A8B223958D2001D6828 /* UIAnimationActionPresetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B402239567300074BA0 /* UIAnimationActionPresetTests.swift */; };
 		9CBB7A8C223958D3001D6828 /* UIAnimationActionPresetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B402239567300074BA0 /* UIAnimationActionPresetTests.swift */; };
 		9CBB7A8E223958E5001D6828 /* UIAnimationActionInferredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB7A8D223958E5001D6828 /* UIAnimationActionInferredTests.swift */; };
@@ -185,6 +189,8 @@
 		9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory3.swift; sourceTree = "<group>"; };
 		9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory2.swift; sourceTree = "<group>"; };
 		9C1B1B402239567300074BA0 /* UIAnimationActionPresetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationActionPresetTests.swift; sourceTree = "<group>"; };
+		9C5AF38A225D65A30077D192 /* _UIKeyframeAnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIKeyframeAnimationFactory.swift; sourceTree = "<group>"; };
+		9C5AF38D225D65B60077D192 /* _UIConventionalAnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIConventionalAnimationFactory.swift; sourceTree = "<group>"; };
 		9CBB7A8D223958E5001D6828 /* UIAnimationActionInferredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationActionInferredTests.swift; sourceTree = "<group>"; };
 		9CBB7A9022396299001D6828 /* UIView+AnimationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnimationContext.swift"; sourceTree = "<group>"; };
 		9CBB7A93223962CC001D6828 /* UIView+AnimationsTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnimationsTiming.swift"; sourceTree = "<group>"; };
@@ -298,10 +304,12 @@
 				9C1B1AF122392A5800074BA0 /* _UIAnimationTemplate.swift */,
 				9C1B1AF722392A5800074BA0 /* _UIAnimationFactory.swift */,
 				9C1B1AF822392A5800074BA0 /* _UIBasicAnimationFactory.swift */,
+				9C5AF38D225D65B60077D192 /* _UIConventionalAnimationFactory.swift */,
 				9C1B1AF922392A5800074BA0 /* _UIBlockAnimationFactory5.swift */,
 				9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */,
 				9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */,
 				9C1B1AF222392A5800074BA0 /* _UISpringAnimationFactory.swift */,
+				9C5AF38A225D65A30077D192 /* _UIKeyframeAnimationFactory.swift */,
 			);
 			path = AnimationFactory;
 			sourceTree = "<group>";
@@ -570,23 +578,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					9C1B1A93223924C800074BA0 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					9C1B1A9B223924C800074BA0 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					9C1B1AAF223924DA00074BA0 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					9C1B1AB7223924DB00074BA0 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					9CBB7A9C223964D8001D6828 = {
 						CreatedOnToolsVersion = 10.1;
@@ -685,6 +693,7 @@
 				9C1B1B3F2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */,
 				9C1B1ADD2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAdditions.swift in Sources */,
 				9C18129C223CF08600A6E1E4 /* _UIAnimationFactoryAdditiveAction.swift in Sources */,
+				9C5AF38F225D65B60077D192 /* _UIConventionalAnimationFactory.swift in Sources */,
 				9C1B1B0E22392A5900074BA0 /* _UIAnimationContextInternal.swift in Sources */,
 				9C1B1B2B22392E2A00074BA0 /* ___UIAnimationToolbox.m in Sources */,
 				9C1B1B1D22392A5900074BA0 /* UIAnimationContext.swift in Sources */,
@@ -697,6 +706,7 @@
 				9C1B1AD72239254E00074BA0 /* _CAAnimationPrototypes.swift in Sources */,
 				9C1B1B1422392A5900074BA0 /* _UIBasicAnimationFactory.swift in Sources */,
 				9C1B1B2322392A5900074BA0 /* _UIAnimationFactoryAction.swift in Sources */,
+				9C5AF38C225D65A30077D192 /* _UIKeyframeAnimationFactory.swift in Sources */,
 				9C1B1B0B22392A5900074BA0 /* UIAnimationAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,6 +748,7 @@
 				9C1B1B3E2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */,
 				9C1B1ADE2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAdditions.swift in Sources */,
 				9C18129B223CF08600A6E1E4 /* _UIAnimationFactoryAdditiveAction.swift in Sources */,
+				9C5AF38E225D65B60077D192 /* _UIConventionalAnimationFactory.swift in Sources */,
 				9C1B1B0F22392A5900074BA0 /* _UIAnimationContextInternal.swift in Sources */,
 				9C1B1B2A22392E2A00074BA0 /* ___UIAnimationToolbox.m in Sources */,
 				9C1B1B1E22392A5900074BA0 /* UIAnimationContext.swift in Sources */,
@@ -750,6 +761,7 @@
 				9C1B1AD82239254E00074BA0 /* _CAAnimationPrototypes.swift in Sources */,
 				9C1B1B1522392A5900074BA0 /* _UIBasicAnimationFactory.swift in Sources */,
 				9C1B1B2422392A5900074BA0 /* _UIAnimationFactoryAction.swift in Sources */,
+				9C5AF38B225D65A30077D192 /* _UIKeyframeAnimationFactory.swift in Sources */,
 				9C1B1B0C22392A5900074BA0 /* UIAnimationAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,8 +836,35 @@
 		9C1B1A70223923FC00074BA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -834,6 +873,31 @@
 		9C1B1A71223923FC00074BA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -915,7 +979,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -989,7 +1053,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1064,7 +1128,7 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1129,7 +1193,7 @@
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1167,7 +1231,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1209,7 +1273,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1248,7 +1312,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1283,7 +1347,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1359,7 +1423,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1425,7 +1489,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

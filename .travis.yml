@@ -1,5 +1,5 @@
 os: osx
-osx_image: xcode10.1
+osx_image: xcode10.2
 branches:
   only:
     - master
@@ -9,16 +9,14 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
   - PROJECT=UIAnimationToolbox.xcodeproj
-  - IOS_FRAMEWORK_SCHEME="UIAnimationToolbox-iOS"
-  - MACOS_FRAMEWORK_SCHEME="UIAnimationToolbox-macOS"
-  - TVOS_FRAMEWORK_SCHEME="UIAnimationToolbox-tvOS"
-  - WATCHOS_FRAMEWORK_SCHEME="UIAnimationToolbox-watchOS"
+  - IOS_FRAMEWORK_SCHEME="UIAnimationToolbox"
+  - TVOS_FRAMEWORK_SCHEME="UIAnimationToolbox"
   matrix:
-    - DESTINATION="OS=12.1,name=iPhone XS"       SCHEME="$IOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
+    - DESTINATION="OS=12.2,name=iPhone XS"       SCHEME="$IOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
     - DESTINATION="OS=11.4,name=iPhone X"        SCHEME="$IOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
     - DESTINATION="OS=10.3.1,name=iPhone 7 Plus" SCHEME="$IOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
 
-    - DESTINATION="OS=12.1,name=Apple TV 4K"    SCHEME="$TVOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
+    - DESTINATION="OS=12.2,name=Apple TV 4K"    SCHEME="$TVOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
     - DESTINATION="OS=11.4,name=Apple TV 4K"    SCHEME="$TVOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
     - DESTINATION="OS=10.2,name=Apple TV 1080p" SCHEME="$TVOS_FRAMEWORK_SCHEME" RUN_TESTS="YES"
 script:

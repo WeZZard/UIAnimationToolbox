@@ -14,7 +14,7 @@ internal class _UIBlockAnimationFactory5:
     _CABasicAnimationPrototype
     >
 {
-    internal typealias OriginalImplementation = _UIViewAnimateWithDurationDelayOptionsAnimationCompletion
+    internal typealias OriginalImplementation = _UIViewAnimateWithDuration5
     
     private let _selector: Selector
     private let _originalImpl: OriginalImplementation

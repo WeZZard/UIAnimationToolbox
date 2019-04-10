@@ -9,13 +9,19 @@
 import UIKit
 
 // MARK: UIView.animate(withDuration:delay:options:animations:completion:)
-internal typealias _UIViewAnimateWithDurationDelayOptionsAnimationCompletion = @convention(c)
-    (UIView.Type, Selector, TimeInterval, TimeInterval,
-    UIView.AnimationOptions, () -> Void, ((Bool) -> Void)?)
-    -> Void
 
-private var _originalAnimateWithDurationDelayOptionsAnimationCompletion: _UIViewAnimateWithDurationDelayOptionsAnimationCompletion!
-private let _animateWithDurationDelayOptionsAnimationCompletion: _UIViewAnimateWithDurationDelayOptionsAnimationCompletion = {
+internal typealias _UIViewAnimateWithDuration5 = @convention(c) (
+    UIView.Type,
+    Selector,
+    TimeInterval,
+    TimeInterval,
+    UIView.AnimationOptions,
+    @convention(block) () -> Void,
+    (@convention(block) (Bool) -> Void)?
+    ) -> Void
+
+private var _originalAnimateWithDuration5: _UIViewAnimateWithDuration5!
+private let _animateWithDuration5: _UIViewAnimateWithDuration5 = {
     (aClass, aSelector, duration, delay, options, animations,
     completionOrNil) -> Void in
     
@@ -24,14 +30,14 @@ private let _animateWithDurationDelayOptionsAnimationCompletion: _UIViewAnimateW
         delay: delay,
         options: options,
         selector: aSelector,
-        originalImpl: _originalAnimateWithDurationDelayOptionsAnimationCompletion
+        originalImpl: _originalAnimateWithDuration5
     )
     
     UIView._animationContexts.append(configureContext)
     
     configureContext.prepare()
     
-    _originalAnimateWithDurationDelayOptionsAnimationCompletion(
+    _originalAnimateWithDuration5(
         aClass, aSelector, duration, delay, options, animations,
         completionOrNil
     )
@@ -45,34 +51,39 @@ private let _animateWithDurationDelayOptionsAnimationCompletion: _UIViewAnimateW
     }
 }
 
-internal func _swizzleAnimateWithDurationDelayOptionsAnimationCompletion() {
+internal func _swizzleAnimateWithDuration5() {
     let sel = #selector(UIView.animate(withDuration:delay:options:animations:completion:))
     let method = class_getClassMethod(UIView.self, sel)!
     let impl = method_getImplementation(method)
-    _originalAnimateWithDurationDelayOptionsAnimationCompletion = unsafeBitCast(impl, to: _UIViewAnimateWithDurationDelayOptionsAnimationCompletion.self)
-    method_setImplementation(method, unsafeBitCast(_animateWithDurationDelayOptionsAnimationCompletion, to: IMP.self))
+    _originalAnimateWithDuration5 = unsafeBitCast(impl, to: _UIViewAnimateWithDuration5.self)
+    method_setImplementation(method, unsafeBitCast(_animateWithDuration5, to: IMP.self))
 }
 
 // MARK: UIView.animate(withDuration:animations:completion:)
-internal typealias _UIViewAnimateWithDurationAnimationCompletion = @convention(c)
-    (UIView.Type, Selector, TimeInterval, () -> Void, ((Bool) -> Void)?)
-    -> Void
 
-private var _originalAnimateWithDurationAnimationCompletion: _UIViewAnimateWithDurationAnimationCompletion!
-private let _animateWithDurationAnimationCompletion: _UIViewAnimateWithDurationAnimationCompletion = {
+internal typealias _UIViewAnimateWithDuration3 = @convention(c) (
+    UIView.Type,
+    Selector,
+    TimeInterval,
+    @convention(block) () -> Void,
+    (@convention(block) (Bool) -> Void)?
+    ) -> Void
+
+private var _originalAnimateWithDuration3: _UIViewAnimateWithDuration3!
+private let _animateWithDuration3: _UIViewAnimateWithDuration3 = {
     (aClass, aSelector, duration, animations, completionOrNil) -> Void in
     
     let configureContext = _UIBlockAnimationFactory3(
         duration: duration,
         selector: aSelector,
-        originalImpl: _originalAnimateWithDurationAnimationCompletion
+        originalImpl: _originalAnimateWithDuration3
     )
     
     UIView._animationContexts.append(configureContext)
     
     configureContext.prepare()
     
-    _originalAnimateWithDurationAnimationCompletion(
+    _originalAnimateWithDuration3(
         aClass, aSelector, duration, animations, completionOrNil
     )
     
@@ -85,34 +96,38 @@ private let _animateWithDurationAnimationCompletion: _UIViewAnimateWithDurationA
     }
 }
 
-internal func _swizzleAnimateWithDurationAnimationCompletion() {
+internal func _swizzleAnimateWithDuration3() {
     let sel = #selector(UIView.animate(withDuration:animations:completion:))
     let method = class_getClassMethod(UIView.self, sel)!
     let impl = method_getImplementation(method)
-    _originalAnimateWithDurationAnimationCompletion = unsafeBitCast(impl, to: _UIViewAnimateWithDurationAnimationCompletion.self)
-    method_setImplementation(method, unsafeBitCast(_animateWithDurationAnimationCompletion, to: IMP.self))
+    _originalAnimateWithDuration3 = unsafeBitCast(impl, to: _UIViewAnimateWithDuration3.self)
+    method_setImplementation(method, unsafeBitCast(_animateWithDuration3, to: IMP.self))
 }
 
 // MARK: UIView.animate(withDuration:animations:)
-internal typealias _UIViewAnimateWithDurationAnimations = @convention(c)
-    (UIView.Type, Selector, TimeInterval, () -> Void)
-    -> Void
 
-private var _originalAnimateWithDurationAnimations: _UIViewAnimateWithDurationAnimations!
-private let _animateWithDurationAnimations: _UIViewAnimateWithDurationAnimations = {
+internal typealias _UIViewAnimateWithDuration2 = @convention(c) (
+    UIView.Type,
+    Selector,
+    TimeInterval,
+    @convention(block) () -> Void
+    ) -> Void
+
+private var _originalAnimateWithDuration2: _UIViewAnimateWithDuration2!
+private let _animateWithDuration2: _UIViewAnimateWithDuration2 = {
     (aClass, aSelector, duration, animations) -> Void in
     
     let configureContext = _UIBlockAnimationFactory2(
         duration: duration,
         selector: aSelector,
-        originalImpl: _originalAnimateWithDurationAnimations
+        originalImpl: _originalAnimateWithDuration2
     )
     
     UIView._animationContexts.append(configureContext)
     
     configureContext.prepare()
     
-    _originalAnimateWithDurationAnimations(
+    _originalAnimateWithDuration2(
         aClass, aSelector, duration, animations
     )
     
@@ -125,22 +140,28 @@ private let _animateWithDurationAnimations: _UIViewAnimateWithDurationAnimations
     }
 }
 
-internal func _swizzleAnimateWithDurationAnimations() {
+internal func _swizzleAnimateWithDuration2() {
     let sel = #selector(UIView.animate(withDuration:animations:))
     let method = class_getClassMethod(UIView.self, sel)!
     let impl = method_getImplementation(method)
-    _originalAnimateWithDurationAnimations = unsafeBitCast(impl, to: _UIViewAnimateWithDurationAnimations.self)
-    method_setImplementation(method, unsafeBitCast(_animateWithDurationAnimations, to: IMP.self))
+    _originalAnimateWithDuration2 = unsafeBitCast(impl, to: _UIViewAnimateWithDuration2.self)
+    method_setImplementation(method, unsafeBitCast(_animateWithDuration2, to: IMP.self))
 }
 
 // MARK: UIView.animate(withDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:)
 
 @available(iOS 9.0, *)
-internal typealias _UIViewSpringAnimation = @convention(c)
-    (UIView.Type, Selector, TimeInterval, TimeInterval, CGFloat,
-    CGFloat, UIView.AnimationOptions, () -> Void,
-    ((Bool) -> Void)?)
-    -> Void
+internal typealias _UIViewSpringAnimation = @convention(c) (
+    UIView.Type,
+    Selector,
+    TimeInterval,
+    TimeInterval,
+    CGFloat,
+    CGFloat,
+    UIView.AnimationOptions,
+    @convention(block) () -> Void,
+    (@convention(block) (Bool) -> Void)?
+    ) -> Void
 
 @available(iOS 9.0, *)
 private var _originalSpringAnimation: _UIViewSpringAnimation!
