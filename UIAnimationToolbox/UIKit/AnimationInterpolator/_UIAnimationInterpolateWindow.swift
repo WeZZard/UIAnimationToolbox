@@ -8,7 +8,7 @@
 import UIKit
 
 internal class _UIAnimationInterpolateWindow: UIWindow {
-    internal static let shared: _UIAnimationInterpolateWindow = .init()
+    internal static let shared = _UIAnimationInterpolateWindow(frame: .zero)
     
     private override init(frame: CGRect) {
         super.init(frame: frame)

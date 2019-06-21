@@ -69,8 +69,8 @@
 		9C1B1B2822392AA100074BA0 /* UIViewAnimationOptions+ToolboxAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2522392AA000074BA0 /* UIViewAnimationOptions+ToolboxAdditions.swift */; };
 		9C1B1B2A22392E2A00074BA0 /* ___UIAnimationToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */; };
 		9C1B1B2B22392E2A00074BA0 /* ___UIAnimationToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */; };
-		9C1B1B2D2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */; };
-		9C1B1B2E2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */; };
+		9C1B1B2D2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift */; };
+		9C1B1B2E2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift */; };
 		9C1B1B382239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */; };
 		9C1B1B392239518C00074BA0 /* UIView_AnimationsTimingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */; };
 		9C1B1B3B2239547400074BA0 /* _UIBlockAnimationFactory3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */; };
@@ -107,6 +107,8 @@
 		9CBB7AC322398FBA001D6828 /* AnimationsTimingControlSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB7AC222398FBA001D6828 /* AnimationsTimingControlSwitch.xib */; };
 		9CBB7AC522398FC7001D6828 /* AnimationsTimingControlSegments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB7AC422398FC7001D6828 /* AnimationsTimingControlSegments.xib */; };
 		9CBB7AC722399839001D6828 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB7AC622399839001D6828 /* UIView+Additions.swift */; };
+		9CFF0C2822BD257B00D9B3F4 /* ___UIAnimationToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFF0C2722BD257B00D9B3F4 /* ___UIAnimationToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CFF0C2922BD257B00D9B3F4 /* ___UIAnimationToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CFF0C2722BD257B00D9B3F4 /* ___UIAnimationToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,7 +186,7 @@
 		9C1B1AFD22392A5900074BA0 /* _UIAnimationFactoryAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _UIAnimationFactoryAction.swift; sourceTree = "<group>"; };
 		9C1B1B2522392AA000074BA0 /* UIViewAnimationOptions+ToolboxAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewAnimationOptions+ToolboxAdditions.swift"; sourceTree = "<group>"; };
 		9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UIAnimationToolbox.m"; sourceTree = "<group>"; };
-		9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___UIAnimationToolbox.swift"; sourceTree = "<group>"; };
+		9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___UIAnimationToolboxSwizzler.swift"; sourceTree = "<group>"; };
 		9C1B1B352239518400074BA0 /* UIView_AnimationsTimingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_AnimationsTimingTests.swift; sourceTree = "<group>"; };
 		9C1B1B3A2239547400074BA0 /* _UIBlockAnimationFactory3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory3.swift; sourceTree = "<group>"; };
 		9C1B1B3D2239547900074BA0 /* _UIBlockAnimationFactory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _UIBlockAnimationFactory2.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		9CBB7AC222398FBA001D6828 /* AnimationsTimingControlSwitch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationsTimingControlSwitch.xib; sourceTree = "<group>"; };
 		9CBB7AC422398FC7001D6828 /* AnimationsTimingControlSegments.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationsTimingControlSegments.xib; sourceTree = "<group>"; };
 		9CBB7AC622399839001D6828 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		9CFF0C2722BD257B00D9B3F4 /* ___UIAnimationToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "___UIAnimationToolbox.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +285,8 @@
 		9C181295223CEB4E00A6E1E4 /* Supported Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolbox.swift */,
+				9C1B1B2C2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift */,
+				9CFF0C2722BD257B00D9B3F4 /* ___UIAnimationToolbox.h */,
 				9C1B1B2922392E2A00074BA0 /* ___UIAnimationToolbox.m */,
 				9C1B1ACE2239254E00074BA0 /* Info.plist */,
 			);
@@ -467,6 +471,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFF0C2922BD257B00D9B3F4 /* ___UIAnimationToolbox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +479,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFF0C2822BD257B00D9B3F4 /* ___UIAnimationToolbox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,7 +695,7 @@
 				9C1B1B1722392A5900074BA0 /* _UIBlockAnimationFactory5.swift in Sources */,
 				9C1B1ADA2239254E00074BA0 /* _CAProtocols.swift in Sources */,
 				9C1B1AEC2239254E00074BA0 /* CABasicAnimationAdditiveAction.swift in Sources */,
-				9C1B1B2E2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */,
+				9C1B1B2E2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift in Sources */,
 				9C1B1B3F2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */,
 				9C1B1ADD2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAdditions.swift in Sources */,
 				9C18129C223CF08600A6E1E4 /* _UIAnimationFactoryAdditiveAction.swift in Sources */,
@@ -744,7 +750,7 @@
 				9C1B1B1822392A5900074BA0 /* _UIBlockAnimationFactory5.swift in Sources */,
 				9C1B1ADB2239254E00074BA0 /* _CAProtocols.swift in Sources */,
 				9C1B1AED2239254E00074BA0 /* CABasicAnimationAdditiveAction.swift in Sources */,
-				9C1B1B2D2239349E00074BA0 /* ___UIAnimationToolbox.swift in Sources */,
+				9C1B1B2D2239349E00074BA0 /* ___UIAnimationToolboxSwizzler.swift in Sources */,
 				9C1B1B3E2239547900074BA0 /* _UIBlockAnimationFactory2.swift in Sources */,
 				9C1B1ADE2239254E00074BA0 /* CAMediaTimingFunction+ToolboxAdditions.swift in Sources */,
 				9C18129B223CF08600A6E1E4 /* _UIAnimationFactoryAdditiveAction.swift in Sources */,
