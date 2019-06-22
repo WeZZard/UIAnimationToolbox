@@ -1,5 +1,5 @@
 //
-//  UIAnimationActionPreset.swift
+//  UIAnimationActionDefault.swift
 //  UIAnimationToolbox
 //
 //  Created on 2019/3/16.
@@ -7,27 +7,26 @@
 
 import UIKit
 
-@available(*, renamed: "UIAnimationAction", message: "Use UIAnimationAction with .preset style specified instead.")
-public class UIAnimationActionPreset: CAAction {
+@available(*, renamed: "UIAnimationAction", message: "Use UIAnimationAction with .default style specified instead.")
+public class UIAnimationActionDefault: CAAction {
+    private let _defaultAction: CAAction
     
-    private let _presetAction: CAAction
-    
-    internal init(presetAction: CAAction) {
-        _presetAction = presetAction
+    internal init(defaultAction: CAAction) {
+        _defaultAction = defaultAction
     }
     
     public convenience init?(layer: CALayer, event: String) {
         if let action = UIView._currentAnimationContext?
-            .action(for: layer, forKey: event, style: .preset)
+            .action(for: layer, forKey: event, style: .default)
         {
-            self.init(presetAction: action)
+            self.init(defaultAction: action)
         } else {
             return nil
         }
     }
     
     public static func make(layer: CALayer, event: String) -> CAAction {
-        if let action = UIAnimationActionPreset(layer: layer, event: event) {
+        if let action = UIAnimationActionDefault(layer: layer, event: event) {
             return action
         }
         return NSNull()
@@ -40,6 +39,6 @@ public class UIAnimationActionPreset: CAAction {
         arguments dict: [AnyHashable : Any]?
         )
     {
-        _presetAction.run(forKey: event, object: anObject, arguments: dict)
+        _defaultAction.run(forKey: event, object: anObject, arguments: dict)
     }
 }

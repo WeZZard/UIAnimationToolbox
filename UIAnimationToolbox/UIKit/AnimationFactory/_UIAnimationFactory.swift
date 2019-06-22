@@ -60,7 +60,7 @@ internal class _UIAnimationFactory<
     {
         switch style {
         case .inferred: return inferredAction(for: layer, forKey: event)
-        case .preset:   return presetAction(for: layer, forKey: event)
+        case .default:   return defaultAction(for: layer, forKey: event)
         }
     }
     
@@ -71,7 +71,7 @@ internal class _UIAnimationFactory<
         fatalError("You should not use this abstract class directly")
     }
     
-    internal func presetAction(
+    internal func defaultAction(
         for layer: CALayer, forKey event: String
         ) -> CAAction?
     {

@@ -19,7 +19,7 @@ internal class _UIBasicAnimationFactory<
         for layer: CALayer, forKey event: String
         ) -> CAAction?
     {
-        if let viewLayerAction = presetAction(for: layer, forKey: event),
+        if let viewLayerAction = defaultAction(for: layer, forKey: event),
             !(viewLayerAction is NSNull)
         {
             currentAnimationTiming?._shiftAction(viewLayerAction)
@@ -66,7 +66,7 @@ internal class _UIBasicAnimationFactory<
         }
      }
     
-    internal override func presetAction(
+    internal override func defaultAction(
         for layer: CALayer, forKey event: String
         ) -> CAAction?
     {

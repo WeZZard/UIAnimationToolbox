@@ -12,7 +12,7 @@ public protocol UIAnimationContext: NSObjectProtocol {
     /// Use this function to generate a custom animation in UIKit 
     /// animation block.
     ///
-    /// - Notes: Both UIView custom animatable properties and preset
+    /// - Notes: Both UIView custom animatable properties and default
     /// animatable properties do not use this function to generate 
     /// animation.
     func createAnimation() -> CAAnimation

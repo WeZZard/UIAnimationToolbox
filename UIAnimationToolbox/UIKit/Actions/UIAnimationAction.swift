@@ -9,10 +9,10 @@
 import UIKit
 
 public enum UIAnimationActionStyle {
-    /// Get preset animations for given layer and event. May not have
+    /// Get default animations for given layer and event. Does not have
     /// effects on custom properties.
     ///
-    case preset
+    case `default`
     
     /// Get inferred animations for given layer and event. Returns an
     /// animation action when the wrapping animation API is supported by

@@ -35,8 +35,6 @@ open class CABasicAnimationAdditiveAction<Animation: CABasicAnimation>:
         isAdditivenessRewriteEnabled: Bool = true
         )
     {
-        assert(pendingAnimation.fromValue != nil, "Expects animation's fromValue not to be nil.")
-        assert(!(pendingAnimation.fromValue is NSNull), "Expects animation's fromValue is not an instance of NSNull.")
         self.layer = layer
         self.event = event
         self.pendingAnimation = pendingAnimation
@@ -80,8 +78,6 @@ open class CABasicAnimationAdditiveAction<Animation: CABasicAnimation>:
     
     private func _rewriteAdditiveness() {
         guard !hasRewrittenAdditiveness else { return }
-        
-        precondition(pendingAnimation.fromValue != nil && !(pendingAnimation.fromValue is NSNull))
         
         let presentationLayer = layer.presentation() ?? layer
         
