@@ -24,13 +24,7 @@ internal class _UIAnimationInterpolatorView: UIView {
     }
     
     internal required init?(coder aDecoder: NSCoder) {
-        self.delegate = aDecoder.decodeObject(forKey: "delegate") as! _UIAnimationInterpolatorViewDelegate
-        super.init(coder: aDecoder)
-    }
-    
-    internal override func encode(with aCoder: NSCoder) {
-        super.encode(with: aCoder)
-        aCoder.encode(delegate, forKey: "delegate")
+        return nil
     }
     
     internal var progress: CGFloat {

@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 internal class _UIAnimationInterpolator:
     _UIAnimationInterpolatorViewDelegate
 {
