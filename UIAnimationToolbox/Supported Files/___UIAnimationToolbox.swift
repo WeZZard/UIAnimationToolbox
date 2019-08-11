@@ -1,5 +1,5 @@
 //
-//  ___UIAnimationToolboxSwizzler.swift
+//  ___UIAnimationToolbox.swift
 //  UIAnimationToolbox
 //
 //  Created by WeZZard on 2019/3/13.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ___UIAnimationToolboxSwizzler: NSObject {
+public class ___UIAnimationToolbox: NSObject {
     public override init() {
         super.init()
         struct Token {
