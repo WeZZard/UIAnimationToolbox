@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
                BuildableName = "UIAnimationToolbox.framework"
-               BlueprintName = "UIAnimationToolbox-iOS"
+               BlueprintName = "UIAnimationToolbox"
                ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
             BuildableName = "UIAnimationToolbox.framework"
-            BlueprintName = "UIAnimationToolbox-iOS"
+            BlueprintName = "UIAnimationToolbox"
             ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C1B1AB7223924DB00074BA0"
-               BuildableName = "UIAnimationToolbox-iOSTests.xctest"
-               BlueprintName = "UIAnimationToolbox-iOSTests"
+               BuildableName = "UIAnimationToolboxTests.xctest"
+               BlueprintName = "UIAnimationToolboxTests"
                ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -88,7 +88,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
             BuildableName = "UIAnimationToolbox.framework"
-            BlueprintName = "UIAnimationToolbox-iOS"
+            BlueprintName = "UIAnimationToolbox"
             ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -104,7 +104,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C1B1AAF223924DA00074BA0"
             BuildableName = "UIAnimationToolbox.framework"
-            BlueprintName = "UIAnimationToolbox-iOS"
+            BlueprintName = "UIAnimationToolbox"
             ReferencedContainer = "container:UIAnimationToolbox.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
